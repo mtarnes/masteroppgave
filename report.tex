@@ -24,10 +24,19 @@
 \renewcommand{\headrulewidth}{0pt}
 
 \begin{document}
-
-\ac{CIRT} and \ac{ISIRT}
-
+\input{frontpage}
+\thispagestyle{empty}
+\cleardoublepage
+\pagenumbering{roman}
+\input{abstract}
+\cleardoublepage
+\input{preface}
+\cleardoublepage
 \tableofcontents
+\cleardoublepage
+\listoffigures 
+\cleardoublepage
+\listoftables
 \cleardoublepage
 \input{acronyms}
 \cleardoublepage
@@ -42,8 +51,20 @@
 \fancyfoot{}
 
 %TODO: Add all chapters here
-
+\input{introduction}
+\cleardoublepage
+\input{background}
+\cleardoublepage
+\input{method}
+\cleardoublepage
+\input{results}
+\cleardoublepage
+\input{discussion}
+\cleardoublepage
+\input{conclusion}
+\cleardoublepage
 \addcontentsline{toc}{chapter}{Bibliography}
+\pagestyle{plain}
 %To get references sorted after where they appear in text
 \bibliographystyle{unsrt}
 \bibliography{bib}
