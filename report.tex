@@ -24,7 +24,25 @@
 \renewcommand{\headrulewidth}{0pt}
 
 \begin{document}
+
+\ac{CIRT} and \ac{ISIRT}
+
+\tableofcontents
 \cleardoublepage
+\input{acronyms}
+\cleardoublepage
+\pagenumbering{arabic}
+%Commands to create page numbering and sections/chapters on top of page
+\pagestyle{fancy}
+\fancyhead[LE]{\thepage \\}
+\fancyhead[RE]{\leftmark \\}
+\fancyhead[RO]{\thepage \\}
+\fancyhead[LO]{\rightmark \\}
+%Empty the footer
+\fancyfoot{}
+
+%TODO: Add all chapters here
+
 \addcontentsline{toc}{chapter}{Bibliography}
 %To get references sorted after where they appear in text
 \bibliographystyle{unsrt}
