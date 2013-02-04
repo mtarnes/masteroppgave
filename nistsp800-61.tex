@@ -3,4 +3,28 @@ This subsection gives an introduction to the guidelines \acs{NIST} SP 800-61 and
 
 The security-related threat level is continuously changing and new types of security-related incidents emerge frequently. Preventive actions are not sufficient in order to be able to handle this and an incident response capability is therefore necessary. Even though incident prevention is not sufficient, it is an important complement to incident response. The existence of an incident response capability in an organization can assist them in rapidly detecting incidents, minimizing loss and destruction, mitigating the weaknesses that were exploited and restoring computing services. It is important to note that incident response requires a substantial amount of planning and resources. Some of the most important parts of incident response are the existence of guidelines related to communication and related to prioritizing incidents and the use of a lessons learned process to gain value from incidents.
 
-One of the first considerations for a \ac{CSIRC} should be to agree on a definition of the term incident.
+One of the first considerations for a \ac{CSIRC} should be to agree on a definition of the term incident. This guidelines' definitions of event and incidents are included in section \ref{sec:Definitions} of this report. An organization should have an incident response policy, an incident response plan and incident response procedures, all of which should be tailored to the specific organization's needs. The policy usually includes elements such as prioritization or severity ratings of incidents, a definition of computer security incidents and reporting and contact forms. The plan usually includes an organizational approach to incident response, how the incident response team will communicate with the rest of the organization and with other organizations and metrics for measuring the incident response capability. Procedures should be based on the incident response policy and plan and \acp{SOP} are a delineation of the specific technical processes, techniques, checklists and forms used by the incident response team. An organization should establish procedures regarding communication with various outside parties, like media, law enforcement, other incident response teams, software vendors and \acp{ISP}. It is common to have \acp{PoC} for the various outside parties. 
+
+Organizations should have an incident response team available to handle incidents. The number of people responding depends on the magnitude of the incident. Large organizations can choose to have several incident response team, e.g. one team per division. The teams can consist of employees or be partially or fully outsourced. The team members can be full-time or part-time depending on funding, staffing and incident response need.  %More about teams? Perhaps not necessary?
+An incident response team usually perform intrusion detection, advisory distribution and education and awareness in addition to incident response.
+
+\acs{NIST} SP 800-61 describes the four phases of incident response; preparation, detection and analysis, containment, eradication and recovery and post-incident activity. The phases and the relationship between them is illustrated in figure \ref{fig:NISTIncidentResponse}.
+
+\begin{figure}[H]
+%\hspace*{-0.4cm}
+\begin{center}
+\includegraphics[scale=0.27]{NISTIncidentResponseCycle.png}
+\caption[The Incident Response Life Cycle]{The Incident Response Life Cycle \cite{nist800-61}}
+\label{fig:NISTIncidentResponse}
+\end{center}
+\end{figure}
+
+\paragraph{Preparation} 
+
+\paragraph{Detection and Analysis}
+
+\paragraph{Containment, Eradication and Recovery}
+
+\paragraph{Post-Incident Activity}
+
+
