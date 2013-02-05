@@ -10,7 +10,7 @@ An incident response team usually perform intrusion detection, advisory distribu
 
 \acs{NIST} SP 800-61 describes the four phases of incident response; preparation, detection and analysis, containment, eradication and recovery and post-incident activity. The phases and the relationship between them is illustrated in figure \ref{fig:NISTIncidentResponse}.
 
-\begin{figure}[H]
+\begin{figure}[h]
 %\hspace*{-0.4cm}
 \begin{center}
 \includegraphics[scale=0.27]{NISTIncidentResponseCycle.png}
@@ -19,11 +19,16 @@ An incident response team usually perform intrusion detection, advisory distribu
 \end{center}
 \end{figure}
 
-\paragraph{Preparation} This phase includes establishing an incident response capability as well as preventing incidents. The latter is not typically a part of the incident response team's tasks, but it is fundamental to the success of the organization's incident response.
+\paragraph{Preparation} 
+This phase includes establishing an incident response capability as well as preventing incidents. The latter is not typically a part of the incident response team's tasks, but it is fundamental to the success of the organization's incident response. If a large number of incidents occur, it may overwhelm the incident response team. To prepare for incidents the incident handlers should have tools and resources like contact information, incident reporting mechanisms, issue tracking system, digital forensic workstations\footnote{A digital forensic workstation is specially designed for acquiring and analysing data. It usually contains a set of removable hard drives that can be used for evidence storage.} and digital forensic software. It is common to create a portable \emph{jump kit} containing materials that may be needed during incident response.
 
 \paragraph{Detection and Analysis}
+Organizations should prepare to handle any type of incident and to handle common incident types. A classification of incidents can be used as a basis for incident handling. The guidelines provides a list of example categories that contains web, email, improper usage and loss or theft of equipment. This guidelines focuses on handling of any type of incident and not specific categories. A challenge related to incident handling is to actually detect the incident and determine the potential impact the incident may have. The actual detection may be the hardest part of incident handling. The guidelines defines two types of signs of incidents; precursors and indicators, with indicators being the most common. These are defined in the following way: "A \emph{precursor} is a sign that an incident may occur in the future. An \emph{indicator} is a sign that an incident may have occurred or may be occurring now." Common sources for precursors and indicators are \acp{IDPS}, antivirus and antispam software, third-party monitoring services, logs, information on new vulnerabilities and exploits and people. 
+
+A challenging part of this phase is the analysis, i.e. to determine which indicators and precursors are legitimate, if they are really related to an incident and what has actually happened. When the team believes an incident to have occurred they should try to determine the scope. All steps taken should be documented and timestamped. It is important to note that any such documentation can be used in court. The incident response team should maintain a database containing information about incidents, such as status, indicators, related incidents and actions taken by the incident handlers. It is important to prioritize incidents and handle them accordingly. Factors that can be used as a basis for prioritization include the functional impact of the incident, the information impact of the incident and recovery from the incident. When the prioritization is performed the incident response team should notify the appropriate people. It is important to have procedures regarding who these people should be.
 
 \paragraph{Containment, Eradication and Recovery}
+Containment is obviously an important part of incident handling. The existence of strategies and procedures for containment is helpful. These strategies and procedures are different for different types of incidents. 
 
 \paragraph{Post-Incident Activity}
 
