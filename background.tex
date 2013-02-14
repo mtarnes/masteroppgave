@@ -1,6 +1,8 @@
 \chapter{Background}
 \label{chp:background}
+
 \input{threatlandscape}
+
 \section{Incident Management Overview}
 %Eller noe i den duren, måtte bare ha en section til subsectionen :p
 \subsection{Definitions}
@@ -13,7 +15,7 @@ and information or computer security events. It is important to recognize these 
 
 \textbf{Information security incident:} Single or a series of unwanted or unexpected \emph{information security events} that have a significant probability of compromising business operations and threatening information security.
 
-\textbf{Information security incident response team:} Team of appropriately skilled and trusted members of the organization that handles information security incidents during their lifecycle.
+\textbf{\ac{ISIRT}:} Team of appropriately skilled and trusted members of the organization that handles information security incidents during their lifecycle.
 
 The guidelines \acs{NIST} SP 800-61 \cite{nist800-61} specifies the following definitions:
 
@@ -29,16 +31,52 @@ The definition of an adverse event from \cite{nist800-61} is quite similar to th
 \input{iso27035}
 \input{nistsp800-61}
 
-\subsection{NorSIS' Guidelines for Incident Management}
-NorSIS has in cooperation with students\cite{sand2010hendelseshaandtering} developed a new guideline on incident management based on a survey documenting how Norwegian \ac{SMEs} do incident management.
+\subsection{NorSIS' Guideline for Incident Management}
+The \ac{NorSIS} has in cooperation with a group of students\footnote{The students did a survey on incident management in Norwegian \acsp{SME}\cite{sand2010hendelseshaandtering}} developed a guideline for incident management, published in 2010\cite{norsisveiledning}. The aim of this guideline is to give a thorough description of why and how organizations should plan for security incident management, do business impact analysis and explain various measures to improve information security in organization. The guideline distinguish between minimum requirements and recommendations. The content in this section is, unless specified otherwise, derived from\cite{norsisveiledning}.
 
-\cite{norsisveiledning}
+\paragraph{Incident Management Policy} 
+An incident management policy should form the basis for developing new incident management plans in organizations. A solid policy should state an organization's objectives for incident management and include a statement ensuring commitment from senior management. Any relevant laws, standards or regulations should also be included. It is essential that requirements for regularly conducting risk assessment, business impact analysis, tests and training are stated. The guideline also suggests assigning roles and responsibilities in the incident management policy.
+
+\paragraph{Business Impact Analysis}
+NorSIS suggests that organizations conduct a business impact analysis to identify services of such value that they need to be secured. Conducting risk assessment and identifying possible consequences of security incidents are part of this process. The guideline emphasize the importance of knowing risks and potential threats.  
+
+\paragraph{Preventive Measures}
+One of the most cost effective ways to do incident management is implementing preventive measures. Listed as minimum requirements are anti-virus, logs, firewalls, backups, alarms, locks, regularly reviews of threat landscape, and report systems for employees. Other proposed measures include encryption of data and wireless networks.   
+
+\paragraph{Recovery Strategies}
+The guideline recommends having a recovery strategy to quickly re-establish business operations after an incident. Suggestions include backup and emergency solutions. Routines and plans should be in place to handle recovery efficiently.
+
+\paragraph{Incident Management Plan}
+Organizations should use previous assessments and proposed incident scenarios to develop an incident management plan. It is recommended that individual plans addressing different scenarios are developed. Each incident management plan should state type of incident, what triggered the incident, roles and responsibilities, guidelines for communication and notification, maximum response time, check-list of task during incident response and post-incident activities.
+
+\paragraph{Training}
+To reduce costs caused by security incidents, NorSIS suggests training employees in correct use of equipment and make sure routines for incident response are known.
+
+\paragraph{Plan Maintenance}
+The guideline recommends that organizations conduct yearly reviews of their incident management plans. To ensure a solid and up-to-date incident management plan, changes should be made based on experience from previous incidents. 
+
+\paragraph{Outsourcing}
+When organizations decide to outsource services, they should evaluate and agree on incident management procedures. It is the organization outsourcing that is responsible for securing information properly and to make sure sufficient plans for incident management exist. An agreement should define responsibilities and state expected quality of services. 
+
+\paragraph{Example Threat Scenarios}
+The guidelines emphasize that there should be no hesitations among employees when responding to typical threat scenarios. Examples of some security incident are given and aim to help organizations decide whether they have a sufficient incident management. Some of the examples are:
+\begin{itemize}
+\item Backup is lost due to a fire
+\item The organization's network is attacked by a virus
+\item There has been a burglary and two servers are stolen 
+\end{itemize}
+
+
+
+
+
+
 
 \subsection{SANS: Incident Handler's Handbook}
 
 \section{Related Work}
 Due to the increased focus on incident management in recent years, a few studies of organizations' practice exist. Unlike our research, most of the previous surveys are based on quantitative questionnaires.
 
-A group of students at HiG\footnote{Høgskolen i Gjøvik (Norwegian)} did a survey of incident management policies, implementations, training and routines in Norwegian \ac{SMEs}. Their results indicate overall insufficient plans for incident management, and poor quality in existing plans. The survey focus on \ac{SMEs}  in a quantitative questionnaire, whereas our research focus on qualitative analysis of large organizations. Additionally, compliance with standards was not a focus in their studies, as is in ours.
+A group of students at HiG\footnote{Høgskolen i Gjøvik (Norwegian)} did a survey of incident management policies, implementations, training and routines in Norwegian \acp{SME}. Their results indicate overall insufficient plans for incident management, and poor quality in existing plans. The survey focus on \acp{SME}  in a quantitative questionnaire, whereas our research focus on qualitative analysis of large organizations. Additionally, compliance with standards was not a focus in their studies, as is in ours.
 
 In a quantitative study from 2005\cite{brage}, a survey of Norwegian companies and public institutions were performed to look at routines for security incidents, how theory and practice differ and difference between public and private institutions. Public institutions were found to have greater shortcomings in reporting, training and statistics than private companies. 
