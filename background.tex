@@ -34,8 +34,17 @@ The guidelines \acs{NIST} SP 800-61 \cite{nist800-61} specifies the following de
 The definition of an adverse event from \cite{nist800-61} is quite similar to the definition of information security event from \cite{ISO/IEC27000}. The definitions of incidents are also quite similar. These definitions are the ones that will be used in this report. \ac{ISIRT}, \ac{CSIRT} and \ac{CERT} define similar types of teams. In this report the term \acs{IRT} is used to denote such a team. 
 
 \subsection{What is Incident Management}
+It is important to note that incident response requires a substantial amount of planning and resources. Some of the most important parts of incident response are the existence of guidelines related to communication and related to prioritizing incidents and the use of a lessons learned process to gain value from incidents. \cite{nist800-61}
+
+An organization should have an incident response policy, an incident response plan and incident response procedures, all of which should be tailored to the specific organization's needs. The policy usually includes elements such as prioritization or severity ratings of incidents, a definition of computer security incidents and reporting and contact forms. The plan usually includes an organizational approach to incident response, how the incident response team will communicate with the rest of the organization and with other organizations and metrics for measuring the incident response capability. Procedures should be based on the incident response policy and plan. \acp{SOP} are a delineation of the specific technical processes, techniques, checklists and forms used by the incident response team. An organization should establish procedures regarding communication with various outside parties, like media, law enforcement, other incident response teams, software vendors and \acp{ISP}. It is common to have \acp{PoC} for the various outside parties. \cite{nist800-61}
+
+Additionally it is important to have a planned approach to reporting of vulnerabilities that have not yet been exploited \cite{ISO/IEC27035}.
 
 \subsection{\acl{IRT}}
+Organizations should have an incident response team available to handle incidents. The number of people responding depends on the magnitude of the incident. Large organizations can choose to have several incident response teams, e.g. one team per division. The teams can consist of employees or be partially or fully outsourced. The team members can be full-time or part-time depending on funding, staffing and incident response need.  %More about teams? Perhaps not necessary?
+An incident response team usually performs intrusion detection, advisory distribution and education and awareness in addition to incident response. \cite{nist800-61}
+
+The structure of the team may vary depending on the organizations resources and needs. The team may be dedicated, virtual or a mix of the two. However, the standard recommends a permanent team. Responsibilities, processes, allocation of roles and an appropriate training program should be prepared. \cite{ISO/IEC27035}
 
 \section{Standards and Guidelines}
 \input{iso27035}
