@@ -46,24 +46,26 @@ As part of an incident management capability, organizations should have an incid
 
 %\acp{SOP} are a delineation of the specific technical processes, techniques, checklists and forms used by the incident response team. An organization should establish procedures regarding communication with various outside parties, like media, law enforcement, other incident response teams, software vendors and \acp{ISP}. It is common to have \acp{PoC} for the various outside parties. \cite{nist800-61}
 
-Incident management is not purely an IT issue, because incidents threaten an organization as a whole. Incident management seeks to prevent, contain and resolve incidents, in addition to learning from them in order to improve current procedures. ``Thus, incident management is an important tool of overall governance and to have it, in whatever form or shape, is a necessity." \cite{enisaGuide}
+Incident management is not purely an IT issue, because incidents threaten an organization as a whole. Incident management seeks to prevent, contain and resolve incidents, in addition to learning from them in order to improve current procedures. ``Thus, incident management is an important tool of overall governance and to have it, in whatever form or shape, is a necessity\cite{enisaGuide}." 
 
 \subsection{\acl{IRT}}
-Despite extensive preparation and security implementations, incidents happen occasionally. Thus, organizations need incident response to mitigate damage caused by compromised personal and confidential information. Having an \ac{IRT} will aid organizations in responding to incidents more effectively and efficiently, in addition to providing a structured approach for learning from previous incidents. \ac{IRT} members, structure, tasks and responsibilities may vary depending on organizations' goals and needs for information security. 
+Despite extensive preparation and security implementations, incidents occur occasionally. Thus, organizations need incident response to mitigate damage caused by compromised personal or confidential information. Having an \ac{IRT} will aid organizations in responding to incidents more effectively and efficiently, in addition to providing a structured approach for learning from previous incidents. 
 
-Organizations should have an incident response team available to handle incidents. Large organizations may choose to have several incident response teams, e.g. one team per division. The structure of the team may vary depending on organizations' resources and needs. The team may be dedicated, virtual or a mix of the two. However, the ISO/IEC 27035 standard recommends a permanent team. Responsibilities, processes, allocation of roles and an appropriate training program should be prepared for the \ac{IRT}\cite{ISO/IEC27035}.
+As the various definitions of response teams indicate in \ref{sec:Definitions}, an \ac{IRT} ``is a team that responds to computer security incidents by providing all necessary services to solve the problem(s) or to support the resolution of them\cite{enisaCSIRTGoodPractices}." \ac{IRT} structure, members, tasks and responsibilities may vary depending on organizations' resources and need for information security. 
 
-\ac{NIST} recommends having one person in charge of incident response, taking the role as team manager. The team manager should act as a liaison to senior management as well as ensuring that the team has the necessary resources, personnel and skills. 
+All organizations relying on IT should have an incident response team available to handle incidents. Large organizations may choose to have several incident response teams, e.g. one team per division. The structure of the team may vary and can be dedicated, virtual or a mix of the two. However, the ISO/IEC 27035 standard recommends having a permanent team. \acp{IRT} should have clearly defined responsibilities, processes, allocation of roles and appropriate training programs\cite{ISO/IEC27035}. 
+Team members should hold appropriate access permissions, have access to supportive tools to be best possibly prepared to conduct incident response \cite{SANShandbook}.
 
-It is recommended that team members have diverse backgrounds so they are eligible to handle different problems that may arise. Teams should have at least one member with experience in each major technological category. However, it is not required that all team members are technical experts. Nevertheless, good problem solving skills and communication skills are important since effective and efficient incidents response require collaboration and coordination throughout the team and the rest of the organization.
+\ac{NIST} recommends having one person in charge of incident response, taking the role as team manager. The team manager should act as a liaison to senior management as well as ensuring that the team has the necessary resources, personnel and skills. It is recommended that team members have diverse backgrounds so they are able to handle different incidents that may arise. Usually teams consist of highly technically skilled persons, and teams should have at least one member with experience in each major technological category. However, it is not required that \emph{all} team members are technical experts. Nevertheless, good problem solving skills and communication skills are important since effective and efficient incidents response require collaboration and coordination within the team and throughout the organization.
 
-Often, \acp{IRT} have other responsibilities besides incident response, such as intrusion detection, advisory distribution, education and raising awareness\cite{nist800-61}. 
-
-Teams should have appropriate access permissions, tools and training to be best prepared to conduct incident response \cite{SANShandbook}. 
+To minimize the frequency of incidents and to mitigate negative impact caused by them, most \acp{IRT} do not \emph{only} provide reactive services, but may also have other responsibilities, such as intrusion detection, advisory distribution, education and raising awareness within the organization\cite{nist800-61}. 
+ 
 
 %The mission of the \ac{CERT} should reflect what is really important for the organization. The \ac{CERT} must define its constituency. The constituency is the organization or group of organizations and/or people whose incident the team handles. \cite{enisaGuide}  
 
 \section{Standards and Guidelines}
+\input{iso27001}
+\input{iso27002}
 \input{iso27035}
 \input{nistsp800-61}
 \input{enisa}
