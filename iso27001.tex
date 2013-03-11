@@ -1,4 +1,5 @@
 \subsection{\acs{ISO}/\acs{IEC} 27001}
+\label{sec:iso27001}
 This standard provides a model for establishing, implementing, operating, reviewing, maintaining and improving an \ac{ISMS}. The standard adopts the ``Plan-Do-Check-Act" model to structure all \ac{ISMS} processes. The \ac{ISMS} takes information security requirements and expectations of interested parties as input and produces information security outcomes that meet those requirements. The standard encourages to emphasize the importance of:
 \begin{itemize}\itemsep-0.2cm
 \item understanding an organization's information security requirements and the need to establish policy and objectives for information security;
@@ -7,4 +8,45 @@ This standard provides a model for establishing, implementing, operating, review
 \item continual improvement based on objective measurement.
 \end{itemize}
 
-This section describes parts in the standard that are relevant to incident management and the content is, unless specified otherwise, derived from \cite{ISO/IEC27001}.
+This section describes parts of the standard that are relevant to incident management and the content is, unless specified otherwise, derived from \cite{ISO/IEC27001}.
+
+\textbf{4.2.1 Establish the \ac{ISMS} } \\
+The organization shall do the following.
+\begin{enumerate}[d)]
+\item Identify the risks.
+\begin{enumerate}[1)]\itemsep-0.2cm
+\item Identify the assets within the scope of the \ac{ISMS}, and the owners of these assets.
+\item Identify the threats to these assets.
+\item Identify the vulnerabilities that might be exploited by the threats.
+\item Identify the impacts that losses of confidentiality, integrity and availability may have on the assets.
+\end{enumerate}
+\end{enumerate}
+
+This clause is not directly related to incident management, but it can be an important prerequisite. %NBNB finn kilde til dette utsagnet?
+
+\textbf{4.2.2 Implement and operate the \ac{ISMS}} \\
+The organization should do the following.
+\begin{enumerate}[h)]
+\item Implement procedures and other controls capable of enabling prompt detection of security events and response to security incidents.
+\end{enumerate}
+
+This clause specifies that organizations should be able to detect and handle security incidents.
+
+\textbf{4.2.3 Monitor and review the ISMS}\\
+The organization shall do the following.
+\begin{enumerate}[a)]
+\item Execute monitoring and reviewing procedures and other controls to:
+\begin{enumerate}[2)]
+\item promptly identify attempted and successful security breaches and incidents;
+\end{enumerate}
+\vspace{-0.2cm}
+\begin{enumerate}[4)]
+\item help detect security events and thereby prevent security incidents by the use of indicators;
+\end{enumerate}
+\vspace{-0.2cm}
+\begin{enumerate}[5)]
+\item determine whether the actions taken to resolve a breach of security were effective.
+\end{enumerate}
+\end{enumerate}
+
+Common for all clauses in this standard is that they only specify that things should be done, and not how. \acs{ISO}/\acs{IEC} 27002 provides a code of practice for information security management and \acs{ISO}/\acs{IEC} 27035 provides guidelines for the establishment of information security management. These standards are further described in sections \ref{sec:iso27002} and \ref{sec:iso27035} and they can be used to aid the fulfilment of the clauses presented in \acs{ISO}/\acs{IEC} 27001.
