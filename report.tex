@@ -4,6 +4,7 @@
 \usepackage{cite}
 \usepackage[printonlyused]{acronym}
 \usepackage{pdfpages}
+%Space between paragraphs and no indent
 \usepackage[parfill]{parskip}
 \usepackage[hyphens]{url}
 \usepackage{graphicx}
@@ -24,11 +25,16 @@
 \setlength{\headheight}{25.23pt}
 \renewcommand{\headrulewidth}{0pt}
 
+%To decrease vertical space between paragraphs (\paragraph{•}):
+\makeatletter
+\renewcommand{\paragraph}{%
+  \@startsection{paragraph}{4}%
+  {\z@}{0.05cm \@plus 1ex \@minus .2ex}{-1em}%
+  {\normalfont\normalsize\bfseries}%
+}
+\makeatother
+
 \begin{document}
-\input{frontpage}
-%\thispagestyle{empty}
-\cleardoublepage
-%\input{problem-description}
 \includepdf[pages={-}]{problem-description.pdf}
 \cleardoublepage
 \pagenumbering{roman}
