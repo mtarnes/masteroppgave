@@ -24,12 +24,38 @@ Availability management is essential for an organization and it is primarily a p
 This process is concerned with key systems in the event of a failure. The purpose of the process is to ensure that IT resources, systems and services can be restored within agreed timescales in the event of a major incident. The process is related to availability and information security management. The IT service continuity manager is responsible for ensuring that the objectives of this process are met.
 
 \paragraph{Information Security Management}
+This process is concerned with enforcing the security policy. The system in place for this is the \acf{ISMS}. The security policy in an organization is something everyone should have access to and be aware of. Information security management is related to availability, incident, problem and IT service continuity management. 
 
 \paragraph{The Service Desk}
-The service desk is a function.
+The service desk is a function. One of the processes the service desk carries out is incident management. The service desk should be the single point of contact for IT users in an organization. This means that if users wish to log incidents or report events they should contact the service desk. The service desk is the owner of incidents throughout their lifecycle, regardless of who is working on the incident. They should be trained to obtain the skills needed in order to perform incident management as effectively as efficiently as possible.
 
 \paragraph{Incident Management}
+This is the process for dealing with incidents. It includes incidents where service has been disrupted or where service has not yet been disrupted. An incident is defined as being an unplanned interruption to an IT service or reduction in quality of an IT service. An incident can also be the failure of a configuration item that has not yet impacted service. Each organization should have its own definition of a major incident. Large organizations may have dedicated teams available 24/7 to handle these incidents. 
+
+In the incident management process resources are allocated to minimize and mitigate the impact of incidents and service unavailability in line with business priorities. The main objectives are to restore service as quickly as possible in addition to limit adverse impact on business operations as possible. Incident handling may reveal areas that are in need of improvement. Organizations can adopt incident models, which are methods for handling groups of similar incidents.
+
+The incident management process flow is illustrated in figure \ref{fig:ITILIncidentManagement}. The figure shows that incident reports can come from various sources. The incident reported needs to be identified, logged, categorized and prioritized. An example of an incident priority coding system can be seen in figure \ref{fig:ITILIncidentPrioritization}.
+
+
+\begin{figure}[ht]
+\begin{center}
+\hspace{-0.2cm}\includegraphics[scale=0.4]{ITILIncidentPrioritization.png}
+\caption[Incident Priority Coding System]{Incident Priority Coding System \cite{itilbok}}
+\label{fig:ITILIncidentPrioritization}
+\end{center}
+\end{figure}
+
+If the incident turns out to be major the major incident process is initiated. The incident may also need to be escalated. Functional escalation is when the service desk is not able to resolve the incident or when they have not been able to resolve it within the target resolution time. Hierarchical escalation is when the profile of a specific incident within the IT organization and also within business areas needs to be raised. Any incident needs to be investigated and diagnosed in order to subsequently be resolved and closed. The incident management process is closely related to the problem management process.
+
+\begin{sidewaysfigure}
+\centering
+\scalebox{0.48}
+{\includegraphics{ITILIncidentManagement.png}}
+\caption[[The ITIL Incident Management Process]{The ITIL Incident Management Process \cite{itilbok}} 
+\label{fig:ITILIncidentManagement}
+\end{sidewaysfigure}
 
 \paragraph{Problem Management}
+The problem management process is about analysing the root cause as well as resolution of problems.
 
 \paragraph{Event Management}
