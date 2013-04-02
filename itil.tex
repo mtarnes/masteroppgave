@@ -51,11 +51,21 @@ If the incident turns out to be major the major incident process is initiated. T
 \centering
 \scalebox{0.48}
 {\includegraphics{ITILIncidentManagement.png}}
-\caption[[The ITIL Incident Management Process]{The ITIL Incident Management Process \cite{itilbok}} 
+\caption[The ITIL Incident Management Process]{The ITIL Incident Management Process \cite{itilbok}} 
 \label{fig:ITILIncidentManagement}
 \end{sidewaysfigure}
 
 \paragraph{Problem Management}
-The problem management process is about analysing the root cause as well as resolution of problems.
+The problem management process is about analysing the root cause as well as resolving problems. A problem is defined as being the cause of one or more incidents. The process is both proactive and reactive and seeks to prevent problems and incidents as well as reduce the impact of those that cannot be prevented. The problem management process is illustrated in figure \ref{fig:ITILProblemManagement}. 
+
+\begin{figure}[H]
+\hspace{-1.2cm}\includegraphics[scale=0.72]{ITILProblemManagement.png}
+\caption[The ITIL Problem Management Process]{The ITIL Problem Management Process \cite{itilbok}}
+\label{fig:ITILProblemManagement}
+\end{figure}
+
+The figure shows the various inputs to the process. It is important to log all details of the problem. Each problem needs to be categorized and prioritized. They should be prioritized in the same way as incidents, e.g. as in figure \ref{fig:ITILIncidentPrioritization}. During investigation and diagnosis the root cause of the problem should be discovered. The problem needs to be resolved as soon as a permanent fix is available and subsequently closed. If the problem is major a major problem review must be conducted.
 
 \paragraph{Event Management}
+The event management process handles normal messages and detects, escalates and reacts to exceptions. An event can be informational, a warning or an exception. The event management process is similar to the incident management process and should ideally be automated. Some events are triggers for the incident management process.
+%CI - Configuration Item
