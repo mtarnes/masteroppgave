@@ -2,7 +2,7 @@ This section describes the results from interviews and document study for Case A
 
 \subsection{Preparation}
 The IT security manager defines an incident %Skal endre dette til information security? Han nevnte at det ikke trengte å være IT-relatert engang, så kanskje ok å bare skrive incident?
-as the occurrence of something unwanted. This can something that belongs to a predefined category of unwanted incident or an incident of a nature that you see is unwanted when it occurs. More specifically an \ac{ICT} incident will usually involve loss of information or loss of control over information systems. This is a definition that is known in the organization. The categories of unwanted incidents are determined through a risk assessment. This is included in their information security policy which is approved by the management and distributed to all parts of the organization. The policy refers to a document with principles for information security, which contains principles for risk management. %Se prinsipper for informasjonssikkerhet del 1, referer videre til rutiner for risiko og sårbarhetsanalyse
+as the occurrence of something unwanted. This can something that belongs to a predefined category of unwanted incident or an incident of a nature that you see is unwanted when it occurs. More specifically an \ac{ICT} incident will usually involve loss of information or loss of control over information systems. This is a definition that is known in the organization. The categories of unwanted incidents are determined through a risk assessment. This is included in their information security policy which is approved by the management and distributed to all parts of the organization. The policy refers to a document with principles for information security, which contains principles for risk management. They also have a document that further specifies their risk assessment process. %Se prinsipper for informasjonssikkerhet del 1, referer videre til rutiner for risiko og sårbarhetsanalyse
 
 The IT security manager states loss of information related to the organization's core activities as being the worst information security incident they can experience. This could damage their relationship to partners, their general reputation and credibility. Additionally it may damage the work and career of individuals with ownership of the information. %Gir dette bort for mye info? skjnner man kanskje atd et er snakk om forskning?
 Another aspect is that they own information that should not fall into the wrong hands. This can be information that goes under the \ac{UN} treaty on the non-proliferation of nuclear weapons (NPT) \cite{NPT}, which includes information that may be used for spreading of nuclear weapons and weapons technology. %Er dette ok å skrive??
@@ -10,9 +10,30 @@ The loss of such information could obviously have severe consequences.
 
 The organization generates a report once a years, that contains the incidents they have experienced. This way they have an overview over previous incidents.
 
+The organization has, as mentioned, an information security policy and principles for information security document. The latter is to be updated if there are changes in the threat landscape or at least every other year. It is currently a subject for audit. It is up to the departments to make sure that employees and other users are aware of these documents. The IT security manager does not expect that all of the users have detailed knowledge of these documents, even though it is stated that all users have to comply with it. The IT department use these documents actively. %NB spør om dette i ansatteinetrvju!!!
+During the last years the level of threat has increased for this organization and as a consequence they are going to perform a risk and vulnerability assessment for all the departments in the organization. They have an internal policy for incident handling.
+
+They have several systems that are critical for their operations. This means that they need backup solutions for these systems in case of incidents. The IT security manager thinks that they have very good continuity plans. They have among other things tried to remove any single point of failure.
+
 \paragraph{\acl{IRT}}
+Because the organization has an internet domain they are required to have an abuse email-address and they have a team that is responsible for receiving and handling cases reported to this address. The members of this abuse team are a part of the IT-support function of the organization and are part-time employees. Cases that involve employees, botnets or spam are handled by full-time employees at the service desk. One of these employees is the leader of the team. The IT security manager is also part of this team in a more supervising role. The team consists of seven people. The cases sent to abuse are not just received on an email address, but go straight into a case management system. 
+
+The usual notifications will be received during work-hours, but they also have someone available 24/7 if something extra serious occurs. In that case they need to be alerted specifically, and it will typically be a system owner who will notify the person on duty.
+
+They have a tool for mapping IP-addresses to users at specific times, that they need to use related to incidents. There is one person in the team that is responsible for this tool. They also have someone responsible for administrative tasks such as shifts. There is also someone who is responsible for documentation, especially in cases they have not seen before.
+
+The team performs a limited amount of preventive work. They see repeating incidents and have reviews of larger incidents and use this to reveal changes that are needed. They use the \ac{ITIL} framework and treat repeating incidents as problems.
 
 \paragraph{Awareness and Training}
+The organization conducted an information campaign with an external supplier about a year and a half ago. The supplier delivered slides containing small lectures that were sent via email. These were lectures about themes such as how to protect your password. In relation to their attitude towards awareness, he stated: 
+
+\begin{quote}
+\textit{"There is a principle that says, never waste a good crisis"}
+\end{quote}
+
+This means that they use incidents, typically that others have experience and communicate these to the organization. He mentioned that personally he takes any opportunity to talk about the importance of protecting information.
+
+About a year ago they conducted contingency training with information security as the chosen theme. The management was involved in this training. It included seven levels of escalation. The training contributed to increased information security awareness in the management as well as a test of their central contingency plan.
 
 \subsection{Detection and Analysis}
 
