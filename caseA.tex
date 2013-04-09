@@ -8,12 +8,25 @@ The IT security manager states loss of information related to the organization's
 Another aspect is that they own information that should not fall into the wrong hands. This can be information that goes under the \ac{UN} treaty on the non-proliferation of nuclear weapons (NPT) \cite{NPT}, which includes information that may be used for spreading of nuclear weapons and weapons technology. %Er dette ok å skrive??
 The loss of such information could obviously have severe consequences.
 
-The organization generates a report once a years, that contains the incidents they have experienced. This way they have an overview over previous incidents.
+The organization generates a report once a year, that contains the incidents they have experienced. This way they have an overview over previous incidents.
 
-The organization has, as mentioned, an information security policy and principles for information security document. The latter is to be updated if there are changes in the threat landscape or at least every other year. It is currently a subject for audit. It is up to the departments to make sure that employees and other users are aware of these documents. The IT security manager does not expect that all of the users have detailed knowledge of these documents, even though it is stated that all users have to comply with it. The IT department use these documents actively. %NB spør om dette i ansatteinetrvju!!!
+The organization has, as mentioned, an information security policy and principles for information security document. The latter is to be updated if there are changes in the threat landscape or at least every other year. It is currently a subject for audit. It is up to the departments to make sure that employees and other users are aware of these documents. The IT security manager does not expect that all of the users have detailed knowledge of these documents, even though it is stated that all users have to comply with it. The IT department uses these documents actively. %NB spør om dette i ansatteinetrvju!!!
 During the last years the level of threat has increased for this organization and as a consequence they are going to perform a risk and vulnerability assessment for all the departments in the organization. They have an internal policy for incident handling.
 
 They have several systems that are critical for their operations. This means that they need backup solutions for these systems in case of incidents. The IT security manager thinks that they have very good continuity plans. They have among other things tried to remove any single point of failure.
+
+They have a contingency plan for the IT department, that describes a set of incidents. It does not directly target information security incidents, but it includes scenarios where systems are unavailable. A system is unavailable if they have lost control over either if someone has taken control over the system or if there has been unauthorized access. The loss of admin passwords is an example of such an incident. When there is an incident so serious that the contingency plan must be initiated the management is also involved. The contingency plan also includes communication routines related to incidents. 
+
+They have an information department that is responsible for all external communication and they cooperate closely with the IT department. The organization has a procedure for contact with the police in case of any violation of law. If the organization wishes to report a crime it is the manager that has to do this, although the IT security manager will provide the police with any relevant information he has access to. The manager is the only one that can report crimes on behalf of the organization, as this is a government owed organization.
+
+They do not have a holistic plan for incident handling because no incidents are the same. Related to that he stated:
+
+\begin{quote}
+\textit{"To have a detailed guideline that takes all possibilities into account and that you have to change each time you get a new system %. I think that would be 
+[...] we are not that good"}
+\end{quote}
+
+They do however have general guidelines for handling of security incidents. Certain types of incidents are repeating though, like phishing, and they have more detailed guidelines for these types of incidents.
 
 \paragraph{\acl{IRT}}
 Because the organization has an internet domain they are required to have an abuse email-address and they have a team that is responsible for receiving and handling cases reported to this address. The members of this abuse team are a part of the IT-support function of the organization and are part-time employees. Cases that involve employees, botnets or spam are handled by full-time employees at the service desk. One of these employees is the leader of the team. The IT security manager is also part of this team in a more supervising role. The team consists of seven people. The cases sent to abuse are not just received on an email address, but go straight into a case management system. 
@@ -24,6 +37,12 @@ They have a tool for mapping IP-addresses to users at specific times, that they 
 
 The team performs a limited amount of preventive work. They see repeating incidents and have reviews of larger incidents and use this to reveal changes that are needed. They use the \ac{ITIL} framework and treat repeating incidents as problems.
 
+They often need to communicate with the various sections when incidents occur. The people working there are not specialized in handling security incidents, but they know how the systems work, and are therefore important resources. There is a daily designated contact person for one of the sections. Last year they experienced a targeted phishing attack and this led them to gather a team consisting of resources from various sections.
+
+Most of their employees involved in incident handling have an IT background and thereby a solid technological knowledge. Additionally they go through a training process when they are hired. There is also a thorough interview process. During their time in the job they often get new tasks and need training for this. 
+
+\paragraph{Standards and Guidelines}
+
 \paragraph{Awareness and Training}
 The organization conducted an information campaign with an external supplier about a year and a half ago. The supplier delivered slides containing small lectures that were sent via email. These were lectures about themes such as how to protect your password. In relation to their attitude towards awareness, he stated: 
 
@@ -33,21 +52,31 @@ The organization conducted an information campaign with an external supplier abo
 
 This means that they use incidents, typically that others have experience and communicate these to the organization. He mentioned that personally he takes any opportunity to talk about the importance of protecting information.
 
-About a year ago they conducted contingency training with information security as the chosen theme. The management was involved in this training. It included seven levels of escalation. The training contributed to increased information security awareness in the management as well as a test of their central contingency plan.
+About a year ago they conducted a contingency rehearsal with information security as the chosen theme. The management was involved in this training. It included seven levels of escalation. The training contributed to increased information security awareness in the management as well as a test of their central contingency plan.
 
 \subsection{Detection and Analysis}
+All reporters of potential incidents will get an answer so that they will know that someone is looking into it.
 
 \paragraph{Initial Detection}
 %Ta med rapporteringsrutiner og ansattes kjennskap til disse her??
 
 \paragraph{Categorization}
+In addition to categorizing incidents based on type (spam, phishing etc.) they categorize them based on what service or system they belong to.
 
 \subsection{Incident Response}
 
 \paragraph{Workflow}
+The organization has specified workflows for specific types of incidents. Figure \ref{fig:WorkflowCaseABotnet} illustrates the workflow for a botnet incident.
+
+\begin{figure}[H]
+\hspace{-1.1cm}\includegraphics[scale=0.53]{WorkflowCaseABotnet.png}
+\caption[Workflow for Botnet Incident, Case B]{Workflow for Botnet Incident}
+\label{fig:WorkflowCaseABotnet}
+\end{figure}
 
 \paragraph{Escalation}
 
 \paragraph{Electronic Evidence}
+They have a good cooperation with the police and in cases that may lead to criminal cases they do not try to investigate themselves, so that they will not destroy any evidence. %Ca rundt 50 min ut i intervjuet
 
 \subsection{Lessons Learned}
