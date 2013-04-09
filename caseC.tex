@@ -21,25 +21,56 @@ It is the incident managers that \emph{handle} incidents, whereas the \ac{IRT} a
 
 Concerning customers, most have their own \acp{IRT}. During incidents, the \acp{IRT} communicate and coordinate the incident resopnse. The organization also offer their \ac{IRT} as a service for customers that do not have the capacity or need of their own team. 
 
+\paragraph{Standards and Guidelines}
+They are basing their entire service management procedures on the ITIL framework discussed in section \ref{section:ITIL} 
+
 \paragraph{Awareness and Training}
 The IT security manager says they do extensive work to raise awareness around security among employees in their organization. New employees participate in courses where they are introduced to the organization's security handbook and they have to sign that the content is known and understood. Further, the security handbook is revised yearly during employee appraisals where employees have to reconfirm that the content is known.  
 
-In addition to being introduced to the security handbook, employees are invited to lunches and presentations regularly. The intention is to increase the overall competence around security and ensure that security guidelines are read and not forgotten. 
+In addition to being introduced to the security handbook, employees are invited to lunches and presentations regularly. The intention is to increase the overall competence around security and to ensure that security guidelines are read and not forgotten. 
 
-Training?
+The organization does not conduct any regular training for employees addressing incident management. The IT security manager emphasize that their plans and procedures are being used so often in practice that there is no need to arrange training specifically. 
 
+In accordance with the ITIL framework they conduct rehearsals once a year on a scenario they believe to be useful. There are regularly rehearsals performed   together with customers, as they often wish to include their IT service providers. The IT security manager states:
+\begin{quote}
+\textit{``Rehearsals are always expedient."}
+\end{quote}
+Additionally, training with the government take place every other year. 
 
 \subsection{Detection and Analysis}
 \paragraph{Initial Detection}
-The initial detection of an incident can either be automatically generated from a server, it could be an alarm or something discovered manually.
+The initial detection of an incident can either be automatically generated from a server, it could be an alarm or something discovered manually. Often network analysis have to be done manually to discover security breaches. Whenever employees experience something abnormal or unexpected they are advised to report it to the \ac{IRT}. Typically this could be receiving emails from unknown senders or email attachment that does not work as intended; -failing to open or displays a few seconds of something indicating that a script is being run.
+
+The IT security manager suspects underreporting of incidents among employees. He believes the threshold for reporting is high and that employees often omit to report suspicious events. This could either be due to employees failing to see the importance of reporting incidents or that they do not want to acknowledge potential mistakes they made. The IT manager says they would rather have too many events being reported than too few, and thus work continually to emphasize the importance of reporting through raising awareness.
+
+Vulnerabilities are reported through a risk framework, where they are evaluated, categorized and potentially escalated if they are assumed to be serious. They do not operate with anonymization for employees that report security events, but codes of conduct says one could use an external law firm for employees wishing to report things anonymously. However, so far this opportunity has not been used by employees. 
 
 \paragraph{Categorization}
-
+The organization does not follow any standards for categorization of incidents. They classify incidents as level one, two or three; - low, medium or high severity respectively. Whenever incidents are handled they are linked to these levels and handled according to predefined plans. An incident's severity level will determine what can be done in response. For level three incidents, the organization need authorization from customers to shut down systems or make changes in the production environment as necessary, without further approval. These are complex responses and are referred to as emergency changes, but are in some cases necessary to mitigate serious consequences. The organization are basing this approach of responding to incidents on the ITIL framework. ``Accurate categorisation is important because it will allow useful metrics to be gathered highlighting areas of the infrastructure where incidents are occurring\cite{itilbok}."
 
 \subsection{Incident Response}
 \paragraph{Workflow}
 \paragraph{Escalation}
-\paragraph{Electronic Evidence}
+The organization has no routines for escalation during incident response, even though they have done it several times in practice.
 
+\paragraph{Electronic Evidence}
+The organization has no in-house expertise on performing forensic analysis of electronic evidence. Mirroring disks in accordance with routines such that the data can be used as evidence in a Norwegian court is the only thing done by the organization itself. The analysis of the disks are done by an external third party or by the police itself.
 
 \subsection{Lessons Learned}
+The organization are structuring their learning process in accordance with the problem management process from ITIL. During this process improvements are identified. 
+
+A set of improvements are identified and summarized after rehearsals. Often, interaction with external parties are identified as areas of improvement, especially concerning customers. Collaboration and coordination across organizations are proven to be challenging since different parts of an incidents are handled by IT service providers and customers themselves. 
+
+A centralized tool is used to keep track of previous incidents in addition to experiences, potential improvements and internal audits. Meetings are held after major incidents where the incident response process is reviewed. Post-incident meetings are held by the ``problem manager" which is responsible for the ITIL problem management process. Participants vary with the nature of the incident and the targeted environment. The IT security managers recognize the benefits of post-incident meetings and says:
+\begin{quote}
+\textit{``Often concrete measures are identified after incidents. Both organizational, process-related and on the investment side."}
+\end{quote}
+As an example he mentions major DDOS attacks leading to customers investing in new equipment. 
+
+Despite internal learning and review processes, experience and lessons learned are not often shared with external parties. How the organization perform incident management is not something they necessarily want to be public information as they wish to some extent to stay ``under the radar". Also, most often incidents occur with customers and it is thus up to them whether information is shared. 
+
+The organization are currently working on a project for improving their incident management that has proven to be very effective. It mainly involves improving quality in their value chain. The IT security manager describes why this is important to incident management:
+\begin{quote}
+\textit{``One of the most important things regarding incident management is keeping track of and understanding our value chains; -which, when and how components are communicating."}
+\end{quote}
+Large organizations often have complex and long supply chains. They identified weak quality in the description of their value chains to be a problem for incident response. The diagnostic work was complex, and sometimes it was challenging to identify what happened, where it happened and with what consequences. Extensive work was started to identify single-point-of-failure and making the value chain more robust to incidents. The project started for one of the organization's departments but quickly escalated to include larger parts of the organization. The project's objective is to identify vulnerabilities and areas of improvement, whereas the various departments implement recommended changes. So far the project has lead to improvements and new routines for interacting with third parties and shows an overall positive trend for minor incidents. 
