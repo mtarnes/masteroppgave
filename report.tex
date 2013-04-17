@@ -10,6 +10,7 @@
 \usepackage{graphicx}
 \usepackage{wrapfig}
 \usepackage{float}
+%To create more sophisticated lists/list numbering
 \usepackage{enumerate}
 %To be able to rotate figures etc:
 \usepackage{rotating} 
@@ -62,9 +63,10 @@
 %Empty the footer
 \fancyfoot{}
 
-%TODO: Add all chapters here
 \input{introduction}
 \cleardoublepage
+%To prevent footnote from splitting over two pages
+%\interfootnotelinepenalty=10000
 \input{background}
 \cleardoublepage
 \input{method}
