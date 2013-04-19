@@ -14,6 +14,10 @@ In addition to financial losses the organization sees reputation damage as a ser
 
 To avoid that vulnerabilities in legacy software are exploited, the organization's computers are scanned regularly and software that are potential security holes or not in use are removed. 
 
+The IT-manager says that one of the most challenging parts of incident management is constructing a holistic plan that includes everything. More often than not, things no one had thought of happen that needs to be handled. Hence, ensuring a solid information gathering during incidents and making correct decisions at the right time are more important than having a detailed plan to follow. Their experience indicate that the most important thing is to scale correctly, understand the situation and putting relevant measures into action. That is also why they believe it is important that not too many have the authority to make important decisions during incidents, which they tried to limit in their contingency plan.
+
+The organization have plans to follow for communication. In the contingency plan it is described who is responsible for communication, both internally and externally. The IT-manager or the supply manager are always available in case of emergency. To ensure communication during serious incidents, the organization has an instant messenger application as well as SIM-cards with several network suppliers. 
+
 \paragraph{\acl{IRT}}
 The \ac{IRT} is dynamic and changes with the type of incident they are dealing with. The main supplier of IT-operations act as a response team and handle most minor incidents as part of their normal activities. The responsible person and the response team depends on the characteristics of the incident.   
 
@@ -27,7 +31,7 @@ The sequence of the scaling is found in the IT-contingency plan, where particula
 For incidents categorized as a crisis, a team composed of the IT-manager, the supply manager and people from supplier 1 will be formed to respond to the incident. For the most serious incidents, a central manager in the organization will be in charge of the situation.
 
 \paragraph{Standards and Guidelines}
-The organization base many of their processes on the ITIL framework. The supply manager says that standards are used as a basis for the fundamental thinking of how the organization work with security. All IT-managers have had training in ISO/IEC 27001 and ISO/IEC 27002 as well as ISO 27035. Additionally, some employees are certified in ITIL security.   
+The organization base many of their processes on the ITIL framework. Standards are mainly used as a basis for the fundamental thinking around how the organization work with security. All IT-managers have had training in ISO/IEC 27001 and ISO/IEC 27002 as well as ISO 27035. Additionally, some employees are certified in ITIL security.   
 
 The IT-manager says that just as important as being familiar with standards are being familiar with the internal documents describing how the organization perform incident management. 
 
@@ -38,81 +42,61 @@ He emphasize that:
 It is important that employees are familiar with internal routines, hence rehearsals are conducted regularly.
 
 \paragraph{Awareness and Training}
-All employees participate in an introductory course where routines for reporting incidents are explained. Additionally, employees are informed through the intranet if they need to be aware of new trends or specific spam e-mails. To raise awareness around IT security, the organization use a ``questionnaire" for employees regularly, addressing various security related topics such as secure use of memory sticks, viruses, social engineering and spam. 
+All employees participate in an introductory course where routines for reporting incidents are explained. Additionally, employees are informed through the intranet in case they need to be aware of new trends or specific spam e-mails. To raise awareness around IT security, the organization has previously conducted a ``questionnaire" for employees via the intranet, addressing various security-related topics such as secure use of memory sticks, viruses, social engineering and spam. 
 
-It is difficult to measure the effect of awareness campaigns. The IT-manager emphasize that it is not possible to track incidents that did not occur. He says that:
+It is difficult to measure the effect of awareness campaigns. The IT-manager emphasize that it is impossible to track incidents that did not occur. Nevertheless, the level of security incidents has decreased the last three years. He says that:
 \begin{quote}
-\textit{``the level of security incidents has decreased the last three years. One may wonder whether this is due to us detecting fewer incidents or employees getting better at security. I don't think we'll get the answer."}
+\textit{``One may wonder whether this is due to employees getting better at security or us detecting fewer incidents. I don't think we'll get the answer."}
 \end{quote}
  
-The organization conduct rehearsals regularly, talk about internal routines with employees as well as involving external suppliers in their training to best prepare for incident response in practise. Previously, exercises have been set up such that incidents escalate and change as employees discuss what to do in given scenarios.
+To raise awareness and best prepare for incident response in practise the organization conduct rehearsals regularly, discuss internal routines with employees as well as include external suppliers in their training. Previously, exercises have been set up such that incidents escalate and change as employees discuss what to do in given scenarios.%
 
-One thing discovered through rehearsals is the organization's ability to handle a real crisis. The organization found that they needed a way of communicating to employees during a catastrophe. After rehearsals, notifications, information, communication and crisis communication were identified as areas of improvement. The organization found a need for mechanisms to communicate to all employees that is not depending on e-mail or the intranet, when this is not necessarily available during a major crisis.
+Notification, information, communication and crisis communication were identified as areas of improvement after training. The organization looked at their ability to handle a real crisis and found they needed a way to communicate to employees during emergency situations that is not dependent on e-mail or the intranet, when this is not necessarily available during a major crisis.
 
-Collaboration and coordination are extremely important for the organization since they have outsourced with several suppliers. Having effective and sufficient coordination as well as distinct and well-established roles during crisis management are highlighted by the IT-manager as important things to train for.
+The organization has outsources services with several external suppliers and thus collaboration and coordination are extremely important for their incident management. Having effective and sufficient coordination as well as distinct and well-established roles during incident response are highlighted by the IT-manager as important things to train for.
 
 \subsection{Detection and Analysis}
-
-The network supplier or other partners can sometimes give notifications if there is abuse or someone (one of the IPs in the network) contributing in a botnet.
-
-The supply manager is convinced that there is underreporting of incidents, but does not see it as a problem for their incident management. The potential high degree of underreporting does not imply that they miss seeing what the main threats are. He says that even though there are some incidents not being reported, the overall trend is still very apparent in their statistics and thus the right decisions can be made. 
-
+The organization's network supplier or other partners may detect potential incidents. The supply manager is convinced that underreporting of incidents exist, but does not see it as a problem. The potential high degree of underreporting does not imply that they miss seeing what the main threats are. He says that even though there are some incidents not being reported, the overall trend is still very apparent in their statistics and thus the right decisions can be made to avoid serious incidents. 
 
 \paragraph{Initial Detection}
-As the organization has outsourced most of their IT operations, an external organization is responsible for running their internal IDS solution as well as the URL filtering towards the internet. For instance, Trojans can be detected if they have abnormal behaviour. Then organization 1(one of the main contractors for IT operations) is notified. They contact users and are responsible for re-installation of infected computers. In addition, all computers are obliged to have anti-virus installed, so the anti-virus system can in some cases notify the central monitoring agent, which again contacts users with infected computers for re-installation. 
-
-The organization receive monthly reports from both their main IT contractors, where all incidents are recorded. 
-
-There are several ways the organization detects incidents. They have an \ac{IDS} reporting individual users or computers that for instance are involved in file sharing. Anti-virus detect and report viruses, and in some cases employees themselves report that their computer is not working as expected. Those monitoring the network may also detect changes is traffic indicating security incidents. The IT-manager says that most of these initial detections are handled automatically, and that very few incidents are require manual responses.
+There are several ways the organization detects incidents. They have an \ac{IDS} reporting individual users or computers that for instance are involved in file sharing. Anti-virus detects and reports viruses, and in some cases employees themselves report that their computer is not working as expected. Those monitoring the network may also detect changes is traffic indicating security incidents. The IT-manager says that most of these initial detections are handled automatically, and that very few incidents require manual responses. 
 
 \paragraph{Categorization}
-The organization has developed their own framework for categorizing incidents. The inputs used to categorize incidents include how many persons and departments are affected and how serious the incident is. The IT-manager emphasize that this categorization is quite similar to standards and that it is often the availability aspect that is in focus when categorizing incidents.
-
-The central contingency plan states whether incidents are categorizes as a crisis or a catastrophe to ensure they are handled correctly.
+The organization has developed their own framework for categorizing incidents. Inputs used for categorization of incidents are how many persons and departments are affected and the severity level. The IT-manager emphasize that this categorization is quite similar to standards and that it is often the availability aspect that is in focus for incident categorization. The central contingency plan states whether incidents are categorizes as a crisis or a catastrophe to ensure they are handled correctly.
 
 \subsection{Incident Response}
 \paragraph{Workflow}
-Infected computers happen quite often and are thus seen as part of normal operations. If there is risk of escalation, users' network port are shut down before they are contacted. Sometimes situations arise indicating a serious security breach and the IT-manager is contacted. In addition to information security, the employee involved has to be dealt with which might need involvement from the management.
+Minor incidents such as infected computers happen quite often and are seen as part of normal operations. If there is risk of escalation, users' network port can be shut down before users are contacted. Sometimes situations arise indicating a serious security breach and the IT-manager is contacted. In addition to information security, the employee involved has to be dealt with which might need involvement from the management.
 
-The IT-manager says that one of the most challenging parts of incident management is constructing a holistic plan that includes everything. More often than not, things no one had thought of happen and needs to be handled. Hence, ensuring a solid information gathering during incidents and making correct decisions at the right time are more important than having a detailed plan to follow. Their experience indicate that the most important thing is to scale correctly, understand the situation and put relevant measures into action. That is also why they believe it is important that not too many have the authority to make important decisions during incidents, which they tried to limit in their contingency plan.
 
-The organization does also have plans for communication. In the contingency plan it is described who are responsible for communication, both internally and externally. The IT-manager or the supply manager are always available in case of emergency. To ensure communication during serious incidents, the organization has an instant messenger application as well as SIM-cards for several network suppliers. 
 
 The organization uses a proactive method for collecting information during incidents. %beskrevet bakerst i den sentrale beredskapsplanen.
 
-The organization does not have an established check-list to follow for incident response. There is a check-list in the central contingency plan, but not one that addresses IT specifically. This was one of the things that were discovered through a rehearsal and they are currently working on such a check-list. The IT-manager says this is an area they wish to further develop to improve their incident response capabilities. 
+The organization does not have an established check-list to follow during incident response. There is a check-list in the central contingency plan, but not one that addresses IT specifically. This was one of the things that were discovered through a rehearsal and they are currently working on such a check-list. The IT-manager says this is an area they wish to further develop to improve their incident response capabilities. 
 
-The supply manager highlights the challenge of deciding how much and how information should be given to employees during incident response. This is challenging since it is very individual how much information people both want to share and receive, he says. Further, the IT-manager says that this might be one of the most challenging aspects of incident management; - communication. To know when to communicate, what to say and to whom. The supply manager says the most challenging thing is to know how to and how much information to share and that it is easier when it is clearly defined who does what. 
-
+Lack of proper communication may lead to unnecessary hassle. The supply manager says that the implicit knowledge of responsibilities in minor cases is an example of routines that are difficult to document properly.
 \begin{quote}
 \textit{``Problems may arise even with minor incidents when everyone assumes that it is someone else's responsibility."}
 \end{quote}
-Lack of proper communication may lead to unnecessary hassle. The supply manager says that the implicit knowledge of responsibilities in minor cases is an example of routines that are difficult to document properly.
 
-Sometimes incidents may be more serious than predicted. The IT supply manager says assessing what to do in each individual case is difficult. 
-
-Incident reports are most often constructed by the two main suppliers and include excerpts from logs, what happened, what was done and proposed measures to avoid similar incidents in the future.
-
-Four times a year, incidents concerning intelligence, espionage, crime for profit and information security are discussed within the organizations security board and are reported to the management.  
+The supply manager highlights the challenge of deciding how and how much information should be given to employees during incident response. This is challenging since it is very individual how much information people both want to share and receive, he says. Further, the IT-manager means this might be one of the most challenging aspects of incident management; - correct communication. To know when to communicate, what to say and to whom. 
 
 \paragraph{Escalation}
-Whenever an incident occur a team is put together to handle the incident. The IT-manager emphasize that the team is scalable, but that it escalates whenever incidents escalate and are of high severity. Mostly team members are employees from the main supplier of IT-operations, supplier 1, and the organization itself. If the incident is of such a severity that escalation is necessary, the IT-manager says that they primarily try to recruit internal employees, but that in some cases external experts are needed to respond to an incident.
+Whenever an incident occur a team is put together. The IT-manager emphasize that the team is scalable, but that it escalates whenever incidents escalate and reaches a high severity. Most team members are employees from the main supplier of IT-operations, supplier 1, and the organization itself. Whenever incidents are of such a severity that escalation is necessary, the IT-manager says that they primarily try to recruit extra internal employees to the team, but that in some cases external experts are needed to respond effectively to an incident.
 
 \paragraph{Electronic Evidence}
-In case of security breaches, employees acting deliberately, all logs are preserved in case of future investigations. In cases where it is suspected that an employee are acting disloyal their user account can be blocked such that potential evidence are not deleted.
+In case of security breaches, i.e. employees violating policies deliberately, all logs are preserved in case of need for future investigations. In cases where it is suspected that an employee is acting disloyal, their user account is blocked such that potential evidence are not deleted. The supply manager says assessing what to do in each individual case is difficult since sometimes incidents may be more serious than predicted. 
 
 \subsection{Lessons Learned}
 The organization has external revision every other year.
 
-All IT-managers participate in a monthly meeting in an IT manager's forum where the monthly incident reports from the organization's main suppliers are discussed. In these meetings incidents are discussed, whether they are part of the report or not and questions and answers are discussed.
+Incident reports are most often constructed by the two main suppliers and include excerpts from logs, what happened, what was done and proposed measures to avoid similar incidents in the future.The organization receive monthly reports from both their main IT suppliers, where all incidents are recorded. All IT-managers participate in a monthly meeting in an IT manager's forum where the monthly incident reports from the organization's main suppliers are discussed. In these meetings incidents are discussed, whether they are part of the report or not and questions and answers are discussed.
 
-The organization only conduct debriefing meetings after serious incidents, which might be a couple of times a year. 
+The organization only conduct debriefing meetings after serious incidents, which might be a couple of times a year. Additionally, four times a year, incidents concerning intelligence, espionage, crime for profit and information security are discussed within the organizations security board and are reported to the management. 
 
-The IT-manager says that there is always room for improvements. 
+The supply manager emphasize than when they work on improving their IT-operations and infrastructure, security is always in the back of their heads. The IT-manager says that there is always room for improvements. 
 \begin{quote}
 \textit{``It is a moving target we are trying to protect".}
 \end{quote}
 
-The supply manager emphasize than when they work on improving their IT-operations and infrastructure, security is always in the back of their heads.
-
-The IT-manager says that they are interested in obtaining a high contingency and security in their operations and that learning from others are an important factor in achieving this. To gain experience made by others the IT-manager says that they often think about how incidents with others would have affected their organization. In that matter, incidents that hit other organizations will contribute to development and improvement of this organizations contingency plans. The IT-manager says that learning from other's experience is important since the scenarios are real and could happen in this organization as well.
+The IT-manager says that they are interested in obtaining a high contingency and security in their operations and that learning from others are an important factor in achieving this. To benefit from others' experience they often think about how incidents in other organizations would have affected their own organization. In that matter, incidents that hit other organizations will contribute to development and improvement of contingency plans. The IT-manager says that learning from other's experience is important since the scenarios are real and could happen in their organization as well.
