@@ -37,6 +37,16 @@
 }
 \makeatother
 
+%To be able to add author of quotes
+\makeatletter
+\newenvironment{newquote}[2][2em]
+  {\setlength{\@tempdima}{#1}%
+   \def\newquote@author{#2}%
+   \parshape 1 \@tempdima \dimexpr\textwidth-2\@tempdima\relax%
+   \itshape}
+  {\par\normalfont\hfill--\ \newquote@author\hspace*{\@tempdima}\par}
+\makeatother
+
 \begin{document}
 \includepdf[pages={-}]{problem-description.pdf}
 \cleardoublepage
