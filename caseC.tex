@@ -51,28 +51,45 @@ Vulnerabilities are reported through a risk framework, where they are evaluated,
 The organization does not follow any standards for categorization of incidents. They classify incidents as level one, two or three; - low, medium or high severity respectively. Whenever incidents are handled they are linked to these levels and handled according to predefined procedures. An incident's severity level will determine what can be done to respond. For incidents categorized as level three, authorization is needed from customers in case systems need to be shut down or changes have to be made in the production environment. This represent complex incident responses and are referred to as emergency changes, but are in some cases necessary to mitigate serious consequences. The organization are basing this approach on ITIL which stress the importance of incident categorization. ``Accurate categorisation is important because it will allow useful metrics to be gathered highlighting areas of the infrastructure where incidents are occurring\cite{itilbok}." Organizations can use this information to improve exposed infrastructure and thus decrease the number of incidents.
 
 \subsection{Incident Response}
-\paragraph{Workflow}
-The workflow for incident management is based on the processes described in ITIL.
+The main purpose of incident response is to retaining normal business operations, minimize business impact by ensuring service availability and finally finding a temporary solution. The IT security manager explains why keeping services up and running at all times are so important to them:
+\begin{quote}
+\textit{``Customers evaluate us as an IT service provider mainly on the availability of the services we deliver."}
+\end{quote}
 
 Even though the IT security manager describes an incident as whenever there is loss of information, other incidents such as DDOS attacks are also seen as an incident even though this breaches the availability of information rather than the confidentiality or integrity. In most cases he thinks of security incidents whenever there is an attacker trying to steal information. Nevertheless, he highlights:
 \begin{quote}
 \textit{``90-95\% of the security incidents we experience are availability related incidents"}
 \end{quote}
 
-The IT security manager believes their plans work well, since they are used often:
-\begin{quote}
-\textit{``Our plans work so well since we use them often in practice"}
-\end{quote}
+\paragraph{Workflow}
+The workflow for incident management is based on the processes described in ITIL. Figure \ref{fig:workflowcaseC} illustrates the workflow for security incidents. The figure is derived from organization specific documentation as well as information given at the interview.
+
+\begin{figure}[H]
+\hspace{-1.1cm}\includegraphics[scale=0.49]{workflowcaseC.png}
+\caption[Workflow for incidents, Case B]{Workflow for incidents}
+\label{fig:workflowcaseC}
+\end{figure}
+
+\begin{itemize}
+\item An incident is first detected or reported to the service desk.
+\item Each incident is categorized and prioritized such that it can be handled correctly. Further the service desk decides whether the reported event is truly an incident. For false alarms the reported events are either rejected or handled as a service request.
+\item The incident is diagnosed and possible negative effects are considered.
+\item The service desk assesses whether the incident has a known solution and their capability to handle it.
+\item Incidents with unknown solutions are sent to a group of specialists that conduct further investigations.
+\item Escalating and severe incidents are passed on to the Major Incident handling process when appropriate. 
+\item Once a solution is found, whether it is by the service desk or group of specialists, incidents are resolved.
+\item The incident is fully documented with all relevant information.
+\item The incident is closed and users have to confirm that it is fully resolved. 
+\end{itemize}
+
+ 
 
 The IT manager explains why he thinks their routines work so well:
 \begin{quote}
 \textit{``Since we are such a large organization we deal with a large volume of security incidents and thus our framework works well. I believe it is much tougher for smaller organizations; - if it is years since the last incident it becomes more challenging to respond effectively."}
 \end{quote}
 
-It security manager explains why keeping services up and running at all times are so important to them:
-\begin{quote}
-\textit{``Customers evaluate us as an IT service provider mainly on the availability of the services we deliver."}
-\end{quote}
+
 
 \paragraph{Escalation}
 The organization has no predefined routines for escalation during incident response, even though they have done it several times in practice.
