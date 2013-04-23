@@ -14,18 +14,6 @@ There are many things the organization has done to prepare for security incident
 
 The organization also has its own plan for dealing with the media during major incidents. 
 
-\paragraph{\acl{IRT}}
-The organization has its own \ac{IRT} which forms the core of their incident management. Employees work day and night with ``normal business operations" and thus need security incident expertise available 24/7 in case of incidents. The \ac{IRT} work as a point of contact for the entire organization and they primarily assist in incident management and work as a pool of resources for incident managers.
-
-It is the incident managers that \emph{handle} incidents, whereas the \ac{IRT} assist with expertise on security incidents. Additionally, the \ac{IRT} has granted certain mandates that allows them to shut down systems or acquire external expertise and assistance up to a certain cost.    
-
-Most customers have their own \acp{IRT}. During incidents, the \acp{IRT} communicate and coordinate throughout the incident response. The organization also offer their \ac{IRT} as a service for customers that do not have the capacity or need of their own team. 
-
-\paragraph{Standards and Guidelines}
-The organization are basing their entire service management procedures on the ITIL framework discussed in section \ref{section:ITIL} 
-
-They follow the ISO/IEC 27001 standard, and has several certifications. Their incident management processes however are mainly built on the ITIL framework, whereas the standard are used more as a guidance for compliance. The IT security manager are not familiar with the ISO 27035 standard that address security incident management specifically. 
-
 \paragraph{Awareness and Training}
 The IT security manager says they do extensive work to raise awareness around security among employees in their organization. New employees participate in courses where they are introduced to the organization's security handbook and they have to sign that the content is known and understood. Further, the security handbook is revised yearly during employee appraisals where employees have to reconfirm that the content is known.  
 
@@ -47,22 +35,36 @@ The IT security manager suspects underreporting of incidents among employees. He
 
 Vulnerabilities are reported through a risk framework, where they are evaluated, categorized and potentially escalated if they are assumed to be serious. They do not operate with anonymization for employees that report security events, but codes of conduct says one could use an external law firm if they wish to report incidents anonymously. However, this opportunity has not been used by employees so far. 
 
-\paragraph{Categorization}
-The organization does not follow any standards for categorization of incidents. They classify incidents as level one, two or three; - low, medium or high severity respectively. Whenever incidents are handled they are linked to these levels and handled according to predefined procedures. An incident's severity level will determine what can be done to respond. For incidents categorized as level three, authorization is needed from customers in case systems need to be shut down or changes have to be made in the production environment. This represent complex incident responses and are referred to as emergency changes, but are in some cases necessary to mitigate serious consequences. The organization are basing this approach on ITIL which stress the importance of incident categorization. ``Accurate categorisation is important because it will allow useful metrics to be gathered highlighting areas of the infrastructure where incidents are occurring\cite{itilbok}." Organizations can use this information to improve exposed infrastructure and thus decrease the number of incidents.
-
-\subsection{Incident Response}
-The main purpose of incident response is to retaining normal business operations, minimize business impact by ensuring service availability and finally finding a temporary solution. The IT security manager explains why keeping services up and running at all times are so important to them:
-\begin{quote}
-\textit{``Customers evaluate us as an IT service provider mainly on the availability of the services we deliver."}
-\end{quote}
-
 Even though the IT security manager describes an incident as whenever there is loss of information, other incidents such as DDOS attacks are also seen as an incident even though this breaches the availability of information rather than the confidentiality or integrity. In most cases he thinks of security incidents whenever there is an attacker trying to steal information. Nevertheless, he highlights:
 \begin{quote}
 \textit{``90-95\% of the security incidents we experience are availability related incidents"}
 \end{quote}
 
-\paragraph{Workflow}
-The workflow for incident management is based on the processes described in ITIL. Figure \ref{fig:workflowcaseC} illustrates the workflow for security incidents. The figure is derived from organization specific documentation as well as information given at the interview.
+\paragraph{Categorization}
+The organization does not follow any standards for categorization of incidents. They classify incidents as level one, two or three; - low, medium or high severity respectively. Whenever incidents are handled they are linked to these levels and handled according to predefined procedures. An incident's severity level will determine what can be done to respond. For incidents categorized as level three, authorization is needed from customers in case systems need to be shut down or changes have to be made in the production environment. This represent complex incident responses and are referred to as emergency changes, but are in some cases necessary to mitigate serious consequences. The organization are basing this approach on ITIL which stress the importance of incident categorization. ``Accurate categorisation is important because it will allow useful metrics to be gathered highlighting areas of the infrastructure where incidents are occurring\cite{itilbok}." Organizations can use this information to improve exposed infrastructure and thus decrease the number of incidents.
+
+\subsection{Incident Response}
+The main purpose of incident response is to retain normal business operations, minimize business impact by ensuring service availability and  to find a temporary solution. The IT security manager explains why keeping services up and running at all times are so important to them:
+\begin{quote}
+\textit{``Customers evaluate us as an IT service provider mainly on the availability of the services we deliver."}
+\end{quote}
+
+\paragraph{\acl{IRT}}
+The organization has its own \ac{IRT} which forms the core of their incident management. Employees work day and night with ``normal business operations" and thus need security incident expertise available 24/7 in case of incidents. The \ac{IRT} work as a point of contact for the entire organization and they primarily assist in incident management and work as a pool of resources for incident managers.
+
+It is the incident managers that \emph{handle} incidents, whereas the \ac{IRT} assist with expertise on security incidents. Additionally, the \ac{IRT} has granted certain mandates that allows them to shut down systems or acquire external expertise and assistance up to a certain cost.    
+
+The organization has their own \ac{IRT} handbook.
+
+Most customers have their own \acp{IRT}. During incidents, the \acp{IRT} communicate and coordinate throughout the incident response. The organization also offer their \ac{IRT} as a service for customers that do not have the capacity or need of their own team. 
+
+\paragraph{Standards and Guidelines}
+The organization are basing their entire service management procedures on the ITIL framework discussed in section \ref{section:ITIL} 
+
+They follow the ISO/IEC 27001 standard, and has several certifications. Their incident management processes however are mainly built on the ITIL framework, whereas the standard are used more as a guidance for compliance. The IT security manager are not familiar with the ISO 27035 standard that address security incident management specifically. 
+
+\paragraph{Workflow for incidents}
+The workflow for incident management in the organization is based on the processes described in the ITIL framework. Figure \ref{fig:workflowcaseC} illustrates the workflow, which is derived from organization specific documentation as well as information given at the interview. 
 
 \begin{figure}[H]
 \hspace{-1.1cm}\includegraphics[scale=0.49]{workflowcaseC.png}
@@ -82,13 +84,27 @@ The workflow for incident management is based on the processes described in ITIL
 \item The incident is closed and users have to confirm that it is fully resolved. 
 \end{itemize}
 
- 
+\paragraph{Workflow for major incidents}
+For major incidents, defined by ITIL as incidents of the highest and second highest priority, the organization follow other procedures. Incidents in this category have a high degree of user impact and thus have higher urgency and shorter time intervals. These procedures are initiated in the ``Major incident handling process" whenever incidents are assessed as major. This is illustrated in in figure \ref{fig:workflowcaseC}.  
 
-The IT manager explains why he thinks their routines work so well:
-\begin{quote}
-\textit{``Since we are such a large organization we deal with a large volume of security incidents and thus our framework works well. I believe it is much tougher for smaller organizations; - if it is years since the last incident it becomes more challenging to respond effectively."}
-\end{quote}
+Figure \ref{fig:workflowcaseCmajor} illustrate the workflow for major incidents. The content is based on organization specific documents as well as information given during the interview.
 
+\begin{figure}[H]
+\hspace{-1.1cm}\includegraphics[scale=0.53]{WorkflowcaseCMAJOR.png}
+\caption[Workflow for major incidents, Case B]{Workflow for major incidents}
+\label{fig:workflowcaseCmajor}
+\end{figure}
+
+\begin{itemize}
+\item When the organization handles major incidents, support in form of a Service Manager or Incident Manager are engaged in the incident response.
+\item It is evaluated whether an Incident Management Board is needed to handle the incident. If it is not, the incident is handled according to normal incident management procedures.
+\item An Incident Management Board is established to help respond to the major incident.
+\item If dedicated resources are needed, a Task Force is established to work on the incident. A Task Force is an ITIL term
+\item When a solution is found, either by the Task Force or the Incident Management Board, the incident is resolved.
+\item The incident is documented and activities are logged.
+\item The incident is closed and users have to confirm that it is fully resolved.
+\item The incident is handed over to the Problem Management Process for further analysis.  
+\end{itemize}
 
 
 \paragraph{Escalation}
@@ -109,6 +125,11 @@ A centralized tool is used to keep track of previous incidents in addition to ex
 As an example he mentions major DDOS attacks leading to customers investing in new equipment and new routines for communication being implemented. 
 
 Despite internal learning and review processes, experience and lessons learned are not often shared with external parties. How the organization perform incident management is not something they necessarily want to be public information as they wish to some extent to stay ``under the radar". Also, most often incidents occur with their customers and it is thus up to them whether information is shared. 
+
+The IT manager explains why he thinks their routines work so well:
+\begin{quote}
+\textit{``Since we are such a large organization we deal with a large volume of security incidents and thus our framework works well. I believe it is much tougher for smaller organizations; - if it is years since the last incident it becomes more challenging to respond effectively."}
+\end{quote}
 
 The organization are currently working on a project for improving their incident management and it has proven to be very effective. It mainly involves improving quality in their value chains. The IT security manager describes why this is important to incident management:
 \begin{quote}
