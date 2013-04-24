@@ -26,19 +26,6 @@ They do however have general guidelines for handling of security incidents. Cert
 
 If a system owner discovers a vulnerability in his system he will notify the IT security manager about it and about the scheduled update for the patch. The process is the same if the system owner is generally not satisfied with the security of the system.
 
-\paragraph{\acl{IRT}}
-Because the organization has an internet domain they are required to have an abuse email-address and they have a team that is responsible for receiving and handling cases reported to this address. Some of the members of the abuse team are part of the IT-support function of the organization and are part-time employees. Cases that involve employees, botnets or spam are handled by full-time employees at the service desk. One of the full-time employees is the leader of the team. The IT security manager is also part of this team in a supervising role. The team consists of seven people. The cases sent to abuse are not just received on an email address, but go straight into a case management system. Incident handlers are required to give the reporter an answer so that he knows that the potential incident is being looked into and that his report is appreciated.
-
-The usual notifications will be received during work-hours, but they also have someone available 24/7 if something extra serious occurs. In that case they need to be alerted specifically, and it will typically be a system owner who will notify the person on duty.
-
-They have a tool for mapping IP-addresses to users at specific times, that they need to use related to incidents. There is one person in the team that is responsible for this tool. They also have someone responsible for administrative tasks such as shifts. There is additionally someone who is responsible for documentation, especially in cases they have not seen before.
-
-The team performs a limited amount of preventive work. They see repeating incidents and have reviews of larger incidents and use this to identify changes that are needed. They use the \ac{ITIL} framework, discussed in section \ref{section:ITIL} of this report, and treat repeating incidents as problems.
-
-They often need to communicate with the various sections of the organization when incidents occur. The people working there are not specialized in handling security incidents, but they know how the systems work, and are therefore important resources. There is a daily designated contact person for some of the sections. The IT security manager mentioned that this communication can be challenging, especially for the sections that do not have a permanent designated contact person. Last year they experienced a targeted phishing attack and this led them to gather a team consisting of resources from various sections.
-
-Most of their employees involved in incident handling have an IT background and thereby a solid technological knowledge. Additionally they go through a training process when they are hired. There is also a thorough interview process. During their time in the job they often get new tasks and need training for this.
-
 \paragraph{Standards and Guidelines}
 The organization uses \acs{ISO}/\acs{IEC} 27001 and 27002, but they do not aim to be certified. Their information security policy states that they are to be in compliance with these standards. The IT security manager thinks that a certification would be useful, because the most important part of the certification is the commitment of the management related to the standard. Because they are a government owned organization they are required to use \acs{ISO} standards. This is a relatively new requirement and he sees it as being one step closer to a certification.
 
@@ -93,13 +80,26 @@ They also categorize incidents based on impact. They use the categories low, med
 Cases reported to abuse are categorized and dispatched to the second line of incident response. %hmm, litt usikker på hva akkurat det betyr
 From that point it is either resolved or transferred to another section, such as the network section, if they are better equipped to handle it. It can also be solved in cooperation between incident handlers and employees from other sections.
 
-The IT security manager is not very concerned about getting systems up and running as fast as possible after an incident. This is because he wants to make sure that that the incident is properly resolved. There have been cases where he wanted to perform risk and vulnerability assessment of systems, but has not been allowed to do so.
+The IT security manager is not very concerned about getting systems up and running as fast as possible after an incident. This is because he wants to make sure that that the incident is properly resolved. There have been cases where he wanted to perform risk and vulnerability assessments of systems, but has not been allowed to do so.
 
 After an incident the system owner is asked to identify what has been lost or compromised. It is also their job to try to assess if the organization has suffered an economic loss. They do know that they have used employee time on the incident, but other factors, such as the value of information, are hard to estimate. The IT security manager wishes to work on value assessment of information. He wants to do this by asking the owners of information.
 
 If an incident is serious it will be reported to the management. The IT manager is notified about larger incident, but not small routine cases.
 
 An example where the IT security manager used their network monitoring tool, he discovered that several users logged in on the same foreign IP-address. He then contacted them and found that they were in fact abroad, and that their user accounts had not been compromised. By contacting them first the users avoided a cumbersome process of being blocked and having to regain access. The organization also has tools that they use to analyse emails in spam cases. They have the possibility to log in to the email server as admin and fetch emails sent to people. This is only done in serious cases, and if it is done, they only look at emails relevant to the case in order to maintain privacy. The IT security manager has only done this once, in relation to a targeted phishing attack. This attack happened in two stages where the first stage was targeted to the organization and was used to retrieve usernames and passwords from users. The compromised user accounts were subsequently used to send new bank-phishing emails.
+
+\paragraph{\acl{IRT}}
+Because the organization has an internet domain they are required to have an abuse email-address and they have a team that is responsible for receiving and handling cases reported to this address. Some of the members of the abuse team are part of the IT-support function of the organization and are part-time employees. Cases that involve employees, botnets or spam are handled by full-time employees at the service desk. One of the full-time employees is the leader of the team. The IT security manager is also part of this team in a supervising role. The team consists of seven people. The cases sent to abuse are not just received on an email address, but go straight into a case management system. Incident handlers are required to give the reporter an answer so that he knows that the potential incident is being looked into and that his report is appreciated.
+
+The usual notifications will be received during work-hours, but they also have someone available 24/7 if something extra serious occurs. In that case they need to be alerted specifically, and it will typically be a system owner who will notify the person on duty.
+
+They have a tool for mapping IP-addresses to users at specific times, that they need to use related to incidents. There is one person in the team that is responsible for this tool. They also have someone responsible for administrative tasks such as shifts. There is additionally someone who is responsible for documentation, especially in cases they have not seen before.
+
+The team performs a limited amount of preventive work. They see repeating incidents and have reviews of larger incidents and use this to identify changes that are needed. They use the \ac{ITIL} framework, discussed in section \ref{section:ITIL} of this report, and treat repeating incidents as problems.
+
+They often need to communicate with the various sections of the organization when incidents occur. The people working there are not specialized in handling security incidents, but they know how the systems work, and are therefore important resources. There is a daily designated contact person for some of the sections. The IT security manager mentioned that this communication can be challenging, especially for the sections that do not have a permanent designated contact person. Last year they experienced a targeted phishing attack and this led them to gather a team consisting of resources from various sections.
+
+Most of their employees involved in incident handling have an IT background and thereby a solid technological knowledge. Additionally they go through a training process when they are hired. There is also a thorough interview process. During their time in the job they often get new tasks and need training for this.
 
 \begin{figure}[H]
 \hspace{-1.1cm}\includegraphics[scale=0.53]{WorkflowCaseABotnet.png}
