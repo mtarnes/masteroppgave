@@ -25,6 +25,8 @@ The organization has developed plans for communication. In the contingency plan 
 
 Supplier 1 keeps track of trends related to security incidents, by monitoring their own internal systems. These trends are discussed with the organization. Supplier 1 has sensors in the organization's network to detect attacks, so basically they monitor the entire network of the organization. Supplier 1 has further outsourced parts of the monitoring to an external security company. They have a case management system where all cases are logged. This way they keep track of previous incidents for organization B. Supplier 1 also has specific contingency plans developed in cooperation with the organization. These plans are audited every second year. As preventive work, supplier 1 is responsible securing the network.
 
+Supplier 1 makes sure that organization B's systems are backed up daily. They also perform tests to see that these backups are usable. They have two data centres in order to increase the level of redundancy. This way they limit consequences for potential security incidents.
+
 \paragraph{Standards and Guidelines}
 The organization bases many of their processes on the ITIL framework. Standards are mainly used as a basis for the fundamental thinking around how the organization works with security. All IT-managers have had training in ISO/IEC 27001 and ISO/IEC 27002 as well as ISO/IEC 27035. Additionally, some employees are certified in ITIL security. 
 
@@ -49,7 +51,13 @@ It is difficult to measure the effect of awareness campaigns. The IT-manager emp
 To raise awareness and best prepare for incident response in practise the organization conducts rehearsals regularly, discusses internal routines with employees as well as includes external suppliers in their training. Previously, exercises have been set up such that incidents escalate and change as employees discuss what to do in given scenarios. The interviewee from supplier 1 refers to rehearsals as the main form for training:
 
 \begin{quote}
-``\textit{We conduct regular rehearsals [...] It's learning by doing.}"
+\textit{``We conduct regular rehearsals [...] It's learning by doing."}
+\end{quote}
+
+He mentions a scheduled rehearsal for organization B. The crisis team, basis operations, customer service and IT managers within organization B are involved in such a rehearsal. The will be presented with an incident and it seeks to reveal whether their routines work well. It is normally organization B that initiates these rehearsals. The interviewee thinks that rehearsals are important:
+
+\begin{quote}
+\textit{``Yes, we have to continuously rehearse our routines, otherwise they would never work."}
 \end{quote}
 
 Notification, information, communication and crisis communication were identified as areas of improvement after training. The organization looked at their ability to handle a real crisis and found they needed a way to communicate to employees during emergency situations that is not dependent on e-mail or the intranet, when this is not necessarily available during a major crisis.
@@ -85,7 +93,7 @@ When supplier 1 first detects and incident they usually notify the organization 
 ``\textit{In practice, organization B has, despite of what we hear in the media, a relatively decreasing trend when it comes to security incidents.}"
 \end{quote}
 
-Most cases supplier 1 handles are routine cases and standard procedures can be used. If the incident is very serious the security coordinator is involved and responsible for communication between supplier 1 and the organization. All incidents are logged.
+Most cases supplier 1 handles are routine cases and standard procedures can be used. If the incident is very serious the security coordinator is involved and responsible for communication between supplier 1 and the organization. All incidents are logged in the same system. This includes incidents reported from the external sensor-network provider. What they log is the reason for the incident, the impact of it, potential breaches of \acp{SLA}, actions taken, solutions to the incident and the impact of it. Supplier 1 can choose to shut down entire systems for organization B if they see this as necessary.
 
 \paragraph{\acl{IRT}}
 The \ac{IRT} is dynamic and changes with the type of incident they are dealing with. The main supplier of IT-operations acts as a response team and handles most minor incidents as part of their normal activities. The responsible person and the response team depend on the characteristics of the incident.   
@@ -105,8 +113,7 @@ Supplier 1 has a crisis team for the organization. This team consists of managem
 The organization uses a proactive method for collecting information during incidents. %beskrevet bakerst i den sentrale beredskapsplanen.
 
 %Lev 1 sier at det er klare rutiner for incident handing og hva som er en krise. Og for enkelthendelser. 12:57 ut i intervjuet
-
-Supplier 1 has a reporting system that indicates whether an incident is high, medium or low. If the incident is high the customer service center gets a notification as well as a phone call form the external supplier of network sensors. Supplier 1 will take a closer look at each case to see what it is about, remove network access for the equipment in question and notify the user and the IT manager of the department involved. The equipment is brought in to supplier 1 for inspection and subsequently fixed. There are dedicated people that take care of this process and there are 2-3 people on rotation. These people are well informed of the procedure.  
+Supplier 1 has a reporting system that indicates whether an incident is high, medium or low. If the incident is high the customer service center gets a notification as well as a phone call form the external supplier of the sensor-network. Supplier 1 will take a closer look at each case to see what it is about, remove network access for the equipment in question and notify the user and the IT manager of the department involved. The equipment is brought in to supplier 1 for inspection and subsequently fixed. There are dedicated people that take care of this process and there are 2-3 people on rotation. These people are well informed of the procedure.  
 
 \paragraph{Escalation}
 Whenever an incident occurs a team is put together. The IT-manager emphasizes that the team is scalable, but that it escalates whenever incidents escalate and reaches a high severity. Most team members are employees from the main supplier of IT-operations, supplier 1, and the organization itself. Whenever incidents are of such a severity that escalation is necessary, the IT-manager says that they primarily try to recruit extra internal employees to the team, but that in some cases external experts are needed to respond effectively to an incident.
@@ -116,18 +123,24 @@ For incidents that are related to employee privacy, supplier 1 calls in a centra
 \paragraph{Electronic Evidence}
 In case of security breaches, i.e. employees violating policies deliberately, all logs are preserved in case of need for future investigations. In cases where it is suspected that an employee is acting disloyal, their user account is blocked such that potential evidence is not deleted. The supply manager says assessing what to do in each individual case is difficult since sometimes incidents may be more serious than predicted. 
 
+Supplier 1 brings in an expert from central parts of their organization in cases where electronic evidence must be preserved. In these cases all communication must be encrypted. The police can be brought in or evidence can be handed over to the police.
+
 \subsection{Lessons Learned}
 The organization has external revision every other year.
 
-Incident reports are most often constructed by the two main suppliers and include excerpts from logs, what happened, what was done and proposed measures to avoid similar incidents in the future.The organization receives monthly reports from both their main IT suppliers, where all incidents are recorded. All IT-managers participate in a monthly meeting in an IT manager's forum where the monthly incident reports from the organization's main suppliers are discussed. In these meetings incidents are discussed, whether they are part of the report or not and questions and answers are discussed.
+Incident reports are most often constructed by the two main suppliers and include excerpts from logs, what happened, what was done and proposed measures to avoid similar incidents in the future. The organization receives monthly reports from both their main IT suppliers, where all incidents are recorded. Experiences from supplier 1 are gathered in their case management system. Reports containing %Årsakssammenheng
+a solution and a description of what to do should something similar occur. These are the reports sent to organization B. All IT-managers participate in a monthly meeting in an IT manager's forum where the monthly incident reports from the organization's main suppliers are discussed. The security coordinator from supplier 1 also participates. There may additionally be a representative from the external sensor-network provider. They participate at lest to times each year. In these meetings incidents are discussed, whether they are part of the report or not and questions and answers are discussed.
 
-The organization only conducts debriefing meetings after serious incidents, which might be a couple of times a year. Additionally, four times a year, incidents concerning intelligence, espionage, crime for profit and information security are discussed within the organizations security board and are reported to the management. 
+The organization only conducts debriefing meetings after serious incidents, which might be a couple of times a year. The participants in these meetings are the involved IT manager(s), the service manager from supplier 1 and the security coordinator from supplier 1. Additionally, four times a year, incidents concerning intelligence, espionage, crime for profit and information security are discussed within the organizations security board and are reported to the management. 
 
 The supply manager emphasizes that when they work on improving their IT-operations and infrastructure, security is always in the back of their heads. The IT-manager says that there is always room for improvements. 
 \begin{quote}
-\textit{``It is a moving target we are trying to protect".}
+\textit{``It is a moving target we are trying to protect."}
 \end{quote}
 
-The IT-manager says that they are interested in obtaining a high contingency and security in their operations and that learning from others is an important factor in achieving this. To benefit from others' experience they often think about how incidents in other organizations would have affected their own organization. In that matter, incidents that hit other organizations will contribute to development and improvement of contingency plans. The IT-manager says that learning from other's experience is important since the scenarios are real and could happen in their organization as well.
+The IT-manager says that they are interested in obtaining a high contingency %?? Hva menes med dette? 
+and security in their operations and that learning from others is an important factor in achieving this. To benefit from others' experience they often think about how incidents in other organizations would have affected their own organization. In that matter, incidents that hit other organizations will contribute to development and improvement of contingency plans. The IT-manager says that learning from other's experience is important since the scenarios are real and could happen in their organization as well.
 
 Supplier 1 says that when they have had established botnets they have been able to handle this fast and effectively. One problem identified by supplier 1 is that the users are not very eager to give away their computers, as they need them. Users are not very happy when they actually have to give them away, because they do not feel that they have done anything wrong.
+
+One thing the interviewee from supplier 1 mentions that they have learned through rehearsals is not to trust electronics. Contingency plans should be available on paper ass well as electronically.
