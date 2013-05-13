@@ -1,0 +1,285 @@
+\documentclass[b5paper, twoside, openright, 11pt]{report}
+\usepackage[plain]{fullpage}
+\usepackage[utf8]{inputenc}
+\usepackage{cite}
+\usepackage[printonlyused]{acronym}
+\usepackage{pdfpages}
+%Space between paragraphs and no indent
+\usepackage[parfill]{parskip}
+\usepackage[hyphens]{url}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{float}
+%To create more sophisticated lists/list numbering
+\usepackage{enumerate}
+%To be able to rotate figures etc:
+\usepackage{rotating}
+ 
+
+\begin{document}
+\input{acronyms}
+This section describes the findings from case B.
+
+\subsection{Preparation}
+Organization B defines \textit{security breaches} as events violating the organization's security principles caused intentionally by employees. Examples include employees visiting illegal websites or sharing their passwords. \textit{Security incidents} on the other hand, are events threatening information security, but not necessarily caused by disloyal employees. Security breaches and incidents are often seen as deviations from normal activity and often require some sort of structural change. The organization has a deviation system that keeps track of all kinds of deviations, whether it involves physical shortcomings or issues related to information security.
+
+The interviewee from Supplier 1 defines a security incident related to monitoring of a network as when malware has entered the systems and has the potential to exercise either limited or massive damage. Other security incidents are related to users of the systems, such as disloyal employees, and are much harder to detect. He claimed it is almost impossible. This definition is known among those working with security related to Organization B. The interviewee from Supplier 2 defines unauthorized access of information as being a security incident when this access can cause harm to the organization, customers or other related parties. This is the interviewee's personal definition, but it is grounded in a definition internal to Supplier 2.
+
+The security policy is the main governing document for activities conducted within Organization B. Its intention is to define senior management's position concerning IT security, and give an overall picture of where the organization stands with regards to information security. They have no policy that specifically addresses incident management, only practical routines and supporting tools.
+
+When the interviewees from Organization B were asked to consider the worst possible security incident the organization could experience, they said that their biggest fear is disloyal employees leaking information to outsiders without being discovered. Compromised or disclosed information is considered very serious, but in most cases where this is caused by an error it is easier to detect than disloyal employees. Information is the most important asset to protect for the organization as most other things can be restored or repaired.
+
+In addition to information disclosure, they see service interruption as another severe consequence of incidents. Ensuring service availability and business continuity are thus high priorities. Unavailable services could lead to employees not getting any work done which may cause a major financial loss for the organization. Availability is therefore extremely important and thus investments to ensure availability are justified by the financial costs of unavailable services. Redundant equipment and other mechanisms are implemented to ensure the availability of services. 
+
+In addition to financial losses and information leakage, the organization sees reputational damage as a serious consequence of incidents: 
+
+\begin{quote}
+\textit{``If sensitive information concerning customers is leaked or lost, it is both a contractual breach as well as a violation of trust that would imply risk of reputational damage."}
+\end{quote}
+
+The interviewee from Supplier 1 sees loss of sensitive data that are important to the organization's core activities as being the worst possible incident the organization could experience. If they were to lose such information to their competitors it could result in large economical losses. It would be a breach of trust between Organization B and their customers as well as damaging for the organization's reputation.	
+%Ser ut som de er enige ihvertfall :) 
+
+The interviewee from Supplier 2 sees industrial espionage as being the worst security related incident organization B can experience. %He describes this as unauthorized access to something the organization has developed and subsequently abuse of this. 
+The consequences of such an incident are money related, as foreign organizations could develop Organization B's products at a lower cost. 
+
+To avoid that vulnerabilities in legacy software are exploited, the organization's computers are scanned regularly and software with security holes or not in use are removed. When new vulnerabilities are discovered they are categorized and prioritized and Supplier 1 determines how urgent the following update is. For zero-day vulnerabilities they may shut down certain services.
+
+The \acs{IT} manager said that one of the most challenging parts of incident management is constructing a holistic plan. More often than not, things no one had thought of occur and they need to be handled. Hence, ensuring a solid information gathering during incidents and making correct decisions at the right time are more important than having a detailed plan to follow. Their experience indicates that the most important thing is to scale correctly, understand the situation and put relevant measures into action. That is also why they believe it is important that not too many have the authority to make important decisions during incidents, which they tried to limit through their contingency plan.
+
+The organization has developed plans for communication during incident handling. The contingency plan states who is responsible for communication, both internally and externally. It is always a representative from organization B that is to communicate with the media or the police, not any of the suppliers. The IT manager or the supply chain manager are always available in case of an emergency. To ensure communication during serious incidents, the organization has an instant messenger application as well as SIM-cards from several network providers. 
+
+Supplier 1 keeps track of trends related to security incidents, by monitoring their own internal systems. These trends are discussed with the organization. Supplier 1 is responsible for sensors in the organization's network to detect attacks. The sensor network is further outsourced to an external security company. Supplier 1 has a case management system where all cases are logged. This way they keep track of previous incidents for Organization B. They also have specific contingency plans developed in cooperation with the organization. These plans are audited every second year. As preventive work, Supplier 1 is responsible for securing the network.
+
+Supplier 1 makes sure that Organization B's systems are backed up daily. They also perform tests to confirm that these backups are usable. They have two data centres in order to increase the level of redundancy. This way they limit availability related consequences of security incidents.
+
+Supplier 2 has a plan for incident management for Organization B as well. The plan is based on various impact levels of incidents. This plan is only related to applications, as Supplier 2 is not responsible for data. They need plans to be in compliance with the \ac{SLA}. They have specific plans regarding communication. The plans specify who to call, when to call, how often to call and what the conversations should contain. Their PR department handles communication with media. Supplier 2 is required to try to fix any vulnerabilities when they are discovered. They are relatively new as a supplier for Organization B and thus have no records of previous incidents.
+
+\paragraph{Standards and Guidelines}
+The organization bases many of their processes on the ITIL framework. Standards are mainly used as a basis for the fundamental thinking related to security in the organization. All IT managers have had training in ISO/IEC 27001 and ISO/IEC 27002 as well as ISO/IEC 27035. Additionally, some employees are certified in ITIL security. The organization has set compliance with \ac{ITIL} as a requirement for Supplier 2. %Finne ut om dette også er et krav for supplier 1?
+
+Supplier 1 bases everything on \acs{ISO} standards and tries to adapt these to their contingency plans. They have not implemeneted any standards specific to incident management, such as \acs{ISO}/\acs{IEC} 27035. 
+
+The IT manager said that just as important as being familiar with standards is being familiar with the internal documents describing how the organization performs incident management. 
+
+He emphasized that:
+\begin{quote}
+\textit{``The most important thing when a crisis occurs is knowing what to do, not knowing what the standard says."}
+\end{quote}
+It is important that employees are familiar with internal routines, hence rehearsals are conducted regularly.
+
+\paragraph{Awareness and Training}
+All employees participate in an introductory course where routines for reporting incidents are explained. Additionally, employees are informed through the intranet in cases where they need to be aware of new trends or specific spam e-mails. To raise awareness around IT security, the organization has previously conducted a ``questionnaire" for employees via the intranet, addressing various security-related topics such as secure use of USB sticks, viruses, social engineering and spam. 
+
+It is difficult to measure the effect of awareness campaigns. The IT manager emphasized that it is obviously impossible to track incidents that did not occur. Nevertheless, the number of security incidents has decreased during the last three years. The interviewee from Supplier 1 mentioned that the organization does not experience as many incidents as one might expect: 
+
+\begin{quote}
+\textit{``In practice, organization B has, despite of what we hear in the media, a relatively decreasing trend when it comes to security incidents."}
+\end{quote} 
+
+In relation to this the IT manager stated:
+
+\begin{quote}
+\textit{``One may wonder whether this is due to employees getting better at security or us detecting fewer incidents. I don't think we'll get the answer."}
+\end{quote}
+ 
+To raise awareness and best prepare for incident handling in practise the organization conducts rehearsals regularly, discusses internal routines with employees as well as includes external suppliers in their training. Both Supplier 1 and Supplier 2 are included in contingency rehearsals. Previously, exercises have been set up such that incidents escalate and change as employees discuss what to do in given scenarios. The interviewee from Supplier 1 referred to rehearsals as their main form for training:
+
+\begin{quote}
+\textit{``We conduct regular rehearsals [...] It's learning by doing."}
+\end{quote}
+
+He mentioned a scheduled rehearsal for Organization B. IT managers within Organization B as well as the crisis team, basic operations and customer service from Supplier 1 can be involved in such a rehearsal. They will be presented with an incident and the rehearsal seeks to reveal whether their routines work well or not. It is normally Organization B that initiates these rehearsals. The interviewee from Supplier 1 emphasized the importance of rehearsals:
+
+\begin{quote}
+\textit{``Yes, we have to continuously rehearse our routines, otherwise they would never work."}
+\end{quote}
+
+Supplier 2 conducts contingency rehearsals on paper for the crisis team. Additionally they have training for the service desk employees. They have as a requirement that employees are to be \ac{ITIL} certified.
+
+The organization tested their ability to handle a real crisis. Information management, allocation of responsibilities, communication and crisis communication have been identified as areas of improvement after rehearsals. They revealed the need for a way to communicate to employees during emergency situations that is not dependent on e-mail or the intranet, as these are not necessarily available during a major crisis.
+
+The organization has outsourced services with several external suppliers and thus collaboration and coordination are extremely important factors in their incident management. Having effective and sufficient coordination as well as distinct and well-established roles during incident response are highlighted by the IT manager as important things to train for. This is supported by the interviewee from Supplier 2. He mentioned that if rehearsals reveal ambiguity concerning roles and responsibilities, they need to change the contracts in order to clarify this.
+
+\subsection{Detection and Analysis}
+The organization's network supplier or other partners may detect incidents. The supply chain manager is convinced that underreporting of incidents exist, but does not see it as a problem. This is supported by the interviewee from Supplier 1. He also mentioned that it is probably impossible to detect everything. The potential high degree of underreporting does not imply that they miss seeing what the main threats are. The supply chain manager said that even though there are some incidents not being reported, the overall trend is still very apparent in their statistics and thus the right measures to avoid serious incidents can be implemented. 
+
+\paragraph{Initial Detection}
+The organization detects incidents in several ways. They have an \ac{IDS} reporting individual users or computers that for instance are involved in file sharing. Anti-virus detects and reports viruses, and in some cases employees themselves report that their computer is not working as expected. In the latter case the employees are to report to the service desk at Supplier 1. Supplier 1, that has the overall responsibility for monitoring the network, may also detect changes in traffic indicating security incidents. They are the first line of contact for all IT related cases. The IT manager said that most of these initial detections are handled automatically, and that very few incidents require manual responses. 
+
+\paragraph{Categorization}
+The organization has developed their own framework for categorizing incidents. Inputs to the categorization are the number of persons and departments that are affected in addition to the incident's severity level. The IT manager emphasized that this categorization is quite similar to what is presented in standards and that it is often the availability aspect that is in focus for incident categorization. The central contingency plan states whether incidents should be categorized as a crisis or a catastrophe to ensure that they are handled correctly.
+
+Supplier 1 uses yet another external supplier for the sensors in organization B's network. This supplier categorizes incidents as being of low, medium or high impact. An incident is categorized as high if there is no doubt that there is virus, trojan or botnet activity. An example of a medium incident is if someone has visited a website with malicious content. A low incident can be observed protocol traffic.
+
+Supplier 2 categorizes an incident to be a crisis if it concerns most of the users and a system is down. Whether the latter is applicable depends on the type of system in question. Potential economic consequences are also taken into account when an incident is assessed. If they are assessed to be potentially large the incident may be categorized as a crisis. This categorization is based on the contract between Supplier 2 and Organization B. The categorization is further used to prioritize incidents.
+
+\subsection{Incident Response}
+Minor incidents such as infected computers happen quite often and are seen as part of normal operations. If there is risk of escalation, users' network ports can be shut down before users are contacted. Sometimes situations arise indicating a serious security breach and the IT manager is contacted. In case of security breaches, the employee involved has to be dealt with which might need involvement from the management.
+
+The organization does not have an established check-list to follow during incident response. There is a check-list included in the central contingency plan, but not one that addresses IT specifically. This was one of the things that were discovered through a rehearsal and they are currently working on developing such a check-list. The IT manager said this is an area they wish to further develop to improve their incident handling capabilities. 
+
+Lack of proper communication may lead to unnecessary hassle. The supply chain manager said that the implicit knowledge of responsibilities in minor cases is an example of routines that are difficult to document properly.
+
+\begin{quote}
+\textit{``Problems may arise even with minor incidents when everyone assumes that it is someone else's responsibility."}
+\end{quote}
+
+The supply chain manager highlighted the challenge of deciding in what way and how much information should be given to employees during incident handling. This is challenging as it is very individual how much information people both want to share and receive, he said. Further, the IT manager believes correct communication might be one of the most challenging aspects of incident management. To know when to communicate, what to say and to whom. 
+
+When Supplier 1 first detects an incident they usually notify the organization by email. The reason for this is that there are usually small indications in the beginning, for example they see only one compromised host. They usually notify the person in question and the IT manager of the department. If the incident is serious the notification is also sent to the superior IT manager. After detection they initialise a team that handles the incident. If the incident spreads there can be assembled a crisis team and the communication in that case is by email, phone and personal contact. 
+
+Most cases Supplier 1 handles are routine cases and standard procedures can be used. If an incident is very serious the security coordinator is involved and is responsible for communication between Supplier 1 and the organization. All incidents are logged in the same system. This include incidents reported by the external sensor-network provider. The log includes root cause of the incident, the impact of it, potential breaches of \acp{SLA}, actions taken and solutions to the incident. Supplier 1 can choose to shut down entire systems for Organization B if they see it necessary.
+
+Supplier 2 has procedures for handling known security incidents. They do not have any automatic processes as incidents suited for automatic handling are handled by Supplier 1. Many of the activities in incident handling are decided as the incident evolves. This is based on what is experienced at that time, previous experiences, feedback and expectations. To ensure that incidents are solved a fast as possible, the technician(s) who gets the task will only focus on fixing the incident and is not to be disturbed until it is solved. If it takes a long time they can transfer the task to someone else, but the issue will be attended continuously until it is solved. If the technicians at Supplier 2 are not able to solve the problem they can bring in external consultants.
+
+\paragraph{\acl{IRT}}
+The \ac{IRT} is dynamic and changes with the type of incident they are dealing with. Supplier 1 acts as a response team and handles most minor incidents as part of their normal activities. The responsible person and the response team depend on the characteristics of the incident.   
+
+For minor incidents, the \ac{IRT} is fully outsourced to Supplier 1, but is gradually insourced as the severity of the incident increases. Thus, members of the \ac{IRT} may vary. The IT manager said:
+
+\begin{quote}
+\textit{``We try to scale the organization in response to the specific incident we are dealing with."}
+\end{quote}
+
+The sequence of the scaling is found in the IT contingency plan, where particular roles and activities are described. The permanent members of the \ac{IRT} are the IT manager and the supply chain manager as they handle most incidents. Team members have other tasks beside incident management, but if there is need for them to aid in incident response, all other tasks are put on hold.
+
+For incidents categorized as crises, a crisis team will be formed. The team is composed of the IT manager, the supply chain manager, management from Supplier 1, the person at Supplier 1 responsible for IT operations for Organization B at the time of the crisis and whenever necessary representatives from Supplier 2. For the most serious incidents, a central manager in Organization B will be in charge of the situation.
+
+Supplier 1 has a team that is available 24/7 and receives (often automated) incidents reports. They can subsequently determine what to do about it.
+
+Supplier 2 also has teams to handle incidents for Organization B. They have a crisis team and a support function to handle daily management and maintenance. The members of the crisis team is the client service manager, which is the leader of the team, a secretary that is only to take notes and technicians. The members of the team are available 24/7. They also look for improvements in the process and ongoing reviews of plans. The process is audited every third month.
+
+\paragraph{Workflows}
+%The organization uses a proactive method for collecting information during incidents. %beskrevet bakerst i den sentrale beredskapsplanen.
+
+Supplier 1 handles incidents related to IT operations. Figure \ref{fig:WorkflowCaseBSupplier1} illustrates the workflow for incidents (that are not escalated and categorized as a crisis).
+
+\begin{figure}[H]
+%\hspace{-1.1cm}
+\begin{center}
+\includegraphics[scale=0.54]{WorkflowCaseBSupplier1.png}
+\caption[Workflow for Incidents, Case B Supplier 1]{Workflow for Incidents for Supplier 1}
+\label{fig:WorkflowCaseBSupplier1}
+\end{center}
+\end{figure}
+
+\begin{itemize}
+\item The external supplier of the sensor-network receives notifications from sensors and categorizes the incidents.
+\item If the incident is categorized as high the customer service centre at Supplier 1 gets a notification as well as a phone call form the external supplier of the sensor-network. The customer service centre can also receive notifications from users.
+\item The customer service centre investigates each individual case.
+\item The network access for the equipment in question is removed 
+\item The user and the IT manager of the department involved are notified.
+\item The equipment is brought in to Supplier 1 for inspection and subsequently fixed.
+\end{itemize}
+
+%Lev 1 sier at det er klare rutiner for incident handing og hva som er en krise. Og for enkelthendelser. 12:57 ut i intervjuet
+There are dedicated people that take care of this process and there are 2-3 people on rotation. These people are well informed of the procedure.  
+
+
+Supplier 2 is responsible for handling incidents related to applications in Organization B. Their incident workflow is illustrated in figure \ref{fig:WorkflowCaseBSupplier2}.
+
+\begin{figure}[H]
+%\hspace{-1.1cm}
+\begin{center}
+\includegraphics[scale=0.54]{WorkflowCaseBSupplier2.png}
+\caption[Workflow for Incidents, Case B Supplier 2]{Workflow for Incidents for Supplier 2}
+\label{fig:WorkflowCaseBSupplier2}
+\end{center}
+\end{figure}
+
+\begin{itemize}
+\item The service desk receives incident reports. Supplier 2 is the second line of incident handling, so they do not get reports directly from users. Usually they receive reports from Supplier 1.
+\item The severity of the incident is assessed by the service desk employee in cooperation with the person reporting.
+\item If the incident is critical the service desk calls a person responsible for escalation who subsequently initiates the crisis management team. This person can call people and have them come to work if necessary. The crisis team is responsible for getting the incident solved.
+\item For any other incident the service desk will document all reported information and transfer the case to the correct group of technicians.
+\end{itemize}
+
+The technicians should focus on solving incidents and management handles all communication. 
+
+\paragraph{Escalation}
+Whenever an incident occurs a team is put together. The IT manager emphasized that the team is scalable, but that it escalates whenever incidents escalate and reach a high severity level. Most team members are employees from Supplier 1 and the organization itself. Whenever incidents are of such severity that escalation is necessary, they primarily try to recruit extra internal employees to the team. In some cases external experts are needed to respond effectively to an incident.
+
+For incidents that are related to employee privacy, Supplier 1 calls in a central security advisor. This is done to avoid privacy violations.
+
+Supplier 2 has developed clear routines for escalation and contact persons both in Organization B and Supplier 1. They have mandate to call in an external crisis management team if necessary. It is the customer manager who has this mandate. 
+
+\paragraph{Electronic Evidence}
+In case of security breaches, i.e. employees violating policies deliberately, all logs are preserved in case of need for future investigations. In cases where it is suspected that an employee is acting disloyal, their user account is blocked to avoid potential evidence being deleted. The supply chain manager said assessing what to do in each individual case is difficult since sometimes incidents may be more serious than first assumed. 
+
+Supplier 1 brings in an expert from central parts of their organization in cases where electronic evidence must be preserved. In these cases all communication must be encrypted. The police can be brought in or evidence can be handed over to the police for further investigations.
+
+\subsection{Lessons Learned}
+Incident reports are most often constructed by the two main suppliers and include excerpts from logs, what happened, what was the cause, what was done to solve the incident and proposed measures to avoid similar incidents in the future. The organization receives monthly reports from both their main IT suppliers, where all incidents are recorded. Supplier 2 only includes critical incidents or specially requested incidents in their reports. All IT managers as well as the security coordinator from Supplier 1 participate in a monthly meeting in an IT manager's forum where monthly incident reports from the organization's main suppliers are discussed. There may additionally be a representative from the external sensor-network provider present. They participate at least two times each year. In these meetings incidents are discussed, whether they are part of the report or not.
+
+The organization only conducts debriefing meetings after serious incidents, which might be a couple of times a year. The participants in these meetings are the involved IT manager(s), the service manager and the security coordinator from Supplier 1. Additionally, four times a year, incidents concerning intelligence, espionage, crime for profit and information security are discussed within the organization's security board and are reported to the management. 
+
+The supply chain manager emphasized that when they work on improving their IT operations and infrastructure, security is always in the back of their minds. The IT manager said that there is always room for improvements. 
+
+The IT manager said that they are interested in obtaining a high contingency and security in their operations and that learning from others is an important factor in achieving that. To benefit from others' experiences they often think about how incidents in other organizations would have affected themselves. In that matter, incidents that occurred in other organizations will contribute to development and improvement of contingency plans. The IT manager said that learning from other's experience is important since the scenarios are real and could most likely happen in their organization as well.
+
+The interviewee from Supplier 1 said that when they experience botnets they are able to handle them fast and effectively. The interviewee from Supplier 1 mentioned that one thing they learned from rehearsals is not to trust electronics. Thus, contingency plans should be available on paper as well as electronically.
+
+Supplier 2 has been able to handle all critical incidents the last years in accordance with the \ac{SLA}. One contributing factor to this success was that they contacted the right technical resources when needed. The incidents were discovered during work hours, so it was easy to contact the right people as well. Nevertheless, routines have not always worked well, and an example is when different suppliers are involved and no one takes responsibility for the error. Supplier 2 is a consortium and therefore they often have to cooperate. They interviewee has experienced that various suppliers have different focuses:
+
+\begin{quote}
+\textit{``Some are for example of the understanding that they do not own the error, while someone understands that they own it. In cases where the owner does not understand it, it is very challenging to make it work. And it takes a lot of time [...] This is the greatest challenge [...] It is also a political ``game". Who will pay for it?"}
+\end{quote}
+
+Supplier 2 shares experiences from incident handling internally in their team. They conduct post-review sessions where they discuss what was done, what was done in a bad way and what can be improved. This is done in cooperation with Organization B, but not with other suppliers. Additionally they have a knowledge base in their service management tool, where they can add knowledge based articles. The interviewee mentioned that there are many sources of information and handling these and collecting the correct information can be very difficult.
+
+\subsection{Employee Survey}
+%Department 1:
+%1. Mostly, not really, yes but not in detail, has seen it, yes, but not in detail
+%2. Many times, sometimes but their filter is good, yes a lot of spam, yes tons, yes
+	%a. No, no is careful with these emails, no, no, no
+	%b. It happens very often. When are you supposed to report? But people talk and would report to the local IT manager, Has contacted someone when been in doubt, no but have observed other people notifying about these emails, no only to laugh about them, no only delete them thinks that is what they are instructed to do
+%3. It can be many things, no, kind of.. , no does not know the definition, that someone does not follow restrictions
+	%a. e.g. if you receive a USB-stick and inserts it in one's computer, no, breach security instructions. It's about a mix of common sense and doing what you're told, compromised information/ information astray, e.g. giving away money you are not supposed to?
+	%b. tries to be but it happens that one is careless, -, yes, feel that one is supposed to report about suspicious people and similar cases, yes has experienced being hacked myself, yes
+%4. Does not know who and not all cases but would report when in doubt. Will report to local IT manager, no, no has never needed to know. Has never experienced anything, no but if you experince a breach of you computer you should notify someone, yes think I know if something should come up
+%5. Only something in their systems. Knew it beforehand, no, no, yes an information campaign. Some of it was useful, yes online. "The content is known, but it is allright to read it"
+
+%Department 2:
+%1. Read once when I started, Yes, No just started working here, yes, yes
+%2. Yes regular spam, yes, no, yes, yes
+	%a. no, no, -, no, once in a secure way because of curiosity
+	%b. No mostly email everyone in the department gets, no, -, no but it is spam that is mostly picked up by the spam filter, no
+%3. Yes, yes, no, no, no
+	%a. e.g. if an outsider gets access to information, e.g. click links in suspicious e-mails, has to be if outsiders get my password or try to steal my identity, breach of security rules/regulations in organization, same as previous
+	%b. yes lock my screen and does not open attachments from unknown senders, yes, yes (but seems a bit unsure), lock screen on computer and mobile phone, has an intuitive understanding but does not know details. Lock doors and shreds sensitive documents
+%4. Perhaps not to a large enough extent. Would have notified local manager and perhaps others, no, yes my managers and local IT manager, not familiar with cases that should be reported (except some obvious) but would report to local IT manager, think I would know if I saw something suspicious. Would report to IT manager
+%5. No, yes web-course that was useful, no, yes web-lections they got on email. Was not very useful as it was known material. Some of the things were socially unacceptable as well such as refusing a customer lending your pc by plugging in his USB, yes online. Some of the suggestions were so strict that you would rather take the risk not following them would cause
+
+%Department 3:
+%1. Yes, yes would say so, yes, yes insofar, %(dro bittelitt på det)
+%Mostly I think
+%2. Yes, yes often, yes, yes many times
+	%a. No, no never deletes at once, no, no 
+	%b. Is the person at the department that gets notifications. Sends them to central IT-manager. Tries to make sure that people are careful, yes, yes, no receives so many
+%3. We have an information security instruction that says something about this, can imagine what it is, yes, think so at least related to my projects, not in details but can understand it
+	%a. e.g. documents stored on unencrypted USB. Giving away passwords. Download copyrighted material, access websites you know the organization does not like. Lend out your pc or use unknown USB in your computer, if someone sends internal documents to ousiders intentionally or not. Can also be publishing pictures others have taken, confidentiality related to my projects, hacking or that some random sees data on your computer
+	%b. Yes it is in my spinal cord/in my nature (?) plus it is common sense. It is very important that people notify. tries to make sure that people know that they are not "shot" if they do something wrong (although they have to hear it if they have done something extra stupid), yes, yes, yes would say that, has not experienced any problems so assume so
+%4. Yes to central IT manager, to local IT manager (or central if local cannot be reached). Somewhat uncertain as to what cases should be reported. Has little contact with external parties and rarely observes anything, IT manager, not quite would report to IT manager but not sure if this is right, would contact the closest IT manager or supplier 1. Not informed of details
+%5. Yes at external organizations. Very useful. Additionally they have had an awareness campaign were they sent out slides and each lection was quite short. The employees have given positive feedback, yes slides each week for a month or something. Useful. "Having an IT instuction is one thing, but it is good with some refreshing". The lectures were about daily activities. Would have liked to get such lectures more often, yes have gotten by email. Some slides with rules about how to behave. Very useful got some "aha" experiences. Should be performed more often, yes a course. Somewhat useful were informed about guidelines, yes some slides. "A formalisation of what you already knew" "It was nice to see that I have followed the instructions"
+
+Among the 15 participating employees, only two answered that they were not familiar with the organization's information security policy. Eight answered that they were to some extent familiar with it, but that they did not know the details or that they had read it once when they started working there. One of the employees mentioned that there have been made many changes in the policy during the last years and that employees have not always been notified about the changes.
+
+Only one employee had never received any suspicious e-mails. Several said that they receive such e-mails very often, but that it is mainly ``common" spam and easy to recognize. No one mentioned to have received targeted e-mails. No one acknowledged to have carried out instructions in such e-mails, except one that claimed he once did it in a secure way out of curiosity. He clicked a link to examine the quality of the phishing-site, but did not carry out any instructions from there on. A few of the employees have reported to have received such e-mails, but several mentioned that they do not report it, because it is so common. One mentioned that it happens so often, so it is difficult to know when you should report, but that he would report whenever in doubt.
+
+Six employees claimed they know what an information security incident is. Five could not provide a definition, but had an idea of what it is. The rest claimed that they did not know. Most of them were however able to give examples. Among them were information or passwords astray, information on unencrypted \acsp{USB} sticks, use of unknown \acsp{USB} sticks, breach of security instructions or sharing your computer. There were also given examples that showed that there were employees who obviously did not know what an information security incident is. Most employees claimed they were attentive to incidents, even though several of them did not know what it is. Some elaborated their statement by providing examples. They said that they lock their screens and doors and destroy sensitive documents. The IT manager of one of the departments said that they try to make sure that employees know that nobody will be held responsible if they have caused a security incident. This is done to mitigate underreporting of incidents.
+
+Most of the employees were unsure in which cases they should report incidents. Most of them claimed that they would have reported to the local or central IT manager, but some mentioned that they did not know if this was correct. One employee said that he would report to the local IT manager or to Supplier 1. Some of the employees that were not able to define a security incident, still believed they would be able to know whether to report should an incident occur. There were also a few claiming that they were not familiar with reporting procedures, because they had never needed to.
+
+The organization conducted an awareness campaign where all employees were to go through a set of online slides each week for a period of time. The IT manager of one of the departments claimed they got positive feedback from employees. This is supported by several of the employees in the survey who acknowledged to have read these slides and thought it was useful, even though much of it was well-known material. Several of the employees would want such lecture more often:
+
+\begin{quote}
+\textit{``The content was known, but it is all right to read it."}
+\end{quote} 
+
+\begin{quote}
+\textit{``Having an IT instruction is one thing, but being \textbf{reminded} of security instructions is always useful."}
+\end{quote}
+
+Only two employees who had read the slides in the awareness campaign did not find them useful. One of them mentioned that some of the proposed measures were socially unacceptable, such as refusing a customer to use their own USB sticks when using one of the organization's computers during a presentation. The other employee mentioned that some of the measures were so strict that he would rather take the risk of security incidents than following them.
+\end{document}
