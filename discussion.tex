@@ -125,41 +125,29 @@ The organization seems to have a set of well established plans and procedures as
 
 \section{Prominent Challenges and Observations}
 \label{sec:discussionStructures}
+This section discusses challenges and observations that we found prominent in our case study.
+
 \subsection{Communication}
+
+A presentation given at the ``Sikkerhet \& S\aa rbarhet 2013" conference presented results from an audit performed by The Norwegian Data Protection Authority that highlighted a problem we also found evident in our case study. E-mail is still used for unstructured and informal communication, even though this is not a secure channel. Using insecure communication channels exposes the organization to targeted phishing attacks, e.g. as seen in a recent attack against the large Norwegian telecom corporation Telenor\footnote{More information about this attack can be found in \cite{phisingattack}}. The organizations in our case study, used e-mail for communication both as a first notification of incidents and during major incidents. 
+
 \begin{itemize}
 \item \textit{Communication}
 \begin{itemize}
 \item \textit{\textbf{Who} should be contacted \textbf{when}?}
 \item \textit{Who should be contacted when the actual contact person cannot be reached?}
+\item The use of e-mail! It is insecure, but still heavily used! Also for sensitive information and reporting incidents. Supplier 1 uses e-mail to notify Organization B about incidents. This is perhaps not very smart and makes them extra vulnerable for phishing attacks. Supplier 2 uses e-mail as one of the communication methods in crisis handling. Organization A receives incident reports from users by e-mail.(ENISA even recommends using e-mail for reporting.)
 \end{itemize}
 \end{itemize}
 
 \subsection{Information}
-\textit{Closely linked with communication}
+Collecting information with regards to incident management was pointed out as challenging by participants in our case study. Especially for organizations with distributed infrastructures, there are many sources of information which makes the collection of correct information difficult. This observation supports findings in a case study conducted by Ahmad et al.\cite{ahmad2012incident} where the information security manager stated that the sharing or rather the finding of information was one of the most challenging parts of her job. 
 
-It can be challenging to determine what information needs to be collected, how to obtain it and from where. Participants in this study pointed out that there are usually many sources of information which makes this difficult. 
+Several of the participants in our study pointed out information dissemination as a challenge in incident handling. Knowing how much information to share can be difficult. Too little information could give an erroneous picture of the incident which could in turn lead to wrongs decisions being made or insufficient actions being taken. Too much information can be overwhelming and can cause delays in decision making as it has to be structured in order to be useful. It is important to communicate the \textit{right} information to the \textit{right} people. Information about incidents can obviously be quite sensitive and communicating such information to people who are not supposed to receive it can have serious consequences. Additionally, providing unnecessary information can be an annoyance and could at worst be counterproductive.
 
-Several of the participants in our study pointed out information dissemination as a challenge in incident handling. Knowing how much information to share can be difficult. Too little information could give an erroneous picture of the incident which could in turn lead to wrongs decisions being made or insufficient actions being taken. Too much information can be overwhelming and can cause delays in decision making as it has to be structured. It is important to communicate the \textit{right} information \textit{right} people. Information about incidents can obviously be quite sensitive and communicating such information to people who are not supposed to get it can have serious consequences.
+One employee mentioned that often they were not notified about changes made in the security policy, which is an example of poor information dissemination. However, we believe that employees' knowledge of details in the policy is not essential to a successful incident management as long as they are familiar with procedures and are capable of performing necessary actions. Providing information to employees is important, although this information should be relevant and useful.
 
-An example of poor information dissemination from the employee survey in case B is that an employee stated that the information security policy is often changed without the employees being notified about the change.  
-
-Awareness campaigns information. Not too much, not too little. "Ulv ulv"
-
-
-\begin{itemize}
-\item \textit{Information}
-\begin{itemize}
-\item \textit{What information needs to be collected?}
-\item \textit{What information should be \textbf{communicated} to \textbf{whom}?}
-\item \textit{Who should collect it?}
-\item \textit{How can it be collected?}
-\item \textit{failing to classify information can lead to the information not being sufficiently secured according to its value.}
-\end{itemize}
-\end{itemize}
-
-\textit{As found in case B, under lessons learned:
-The interviewee from Supplier 2 mentioned that that handling and collecting information is a challenge. As an employee talks about information dissemination problems in \cite{ahmad2012incident}.
-``it's the sharing, or rather finding of information. The information is there, each day I find a new resource that's got great information."}
+We believe development and establishment of clear information dissemination procedures, that can for instance be based on incident categories, could improve the information dissemination in organizations. If procedures for each predefined incident category exist and are established, it will be easy and efficient to determine which information to share and with whom.
 
 \subsection{Responsibilities}
 \textit{Also closely linked with communication. Better routines for communication may make responsibilities clearer?}
@@ -205,13 +193,24 @@ When we contacted people for the employee survey we observed an interesting atti
 
 We believe that some of the reluctance was because they were scared that the survey would ``reveal" their insufficient knowledge about information security. They seemed somewhat embarrassed about this insufficient knowledge and several said that they probably should have been more familiar with the information security policy. There were however, some that both admitted lack of knowledge and ``excused" this by saying that information security did not concern them. We find this very alarming as information security concerns \textbf{everyone} and as attacks taking advantage of employees, such as targeted malicious e-mails, is an increasing trend. 
 
-Awareness campaigns. They are willing to learn! :)
+Findings from Organization A showed that information classification is not satisfactory. 
+Failing to classify information can lead to the information not being sufficiently secured according to its value. Employees in Organization A seem to fail to recognize that the value and sensitivity of the information they process should determine how information should be secured and handled.
+
+Employees in our survey seem to have an overall positive attitude towards awareness campaigns. Many of them stated that they wished such campaigns would be performed more often. We believe that, as long as the campaigns are not too extensive, this attitude is consistent throughout organizations. Due to this positivity we also believe that employees can with advantage be more involved in rehearsals. Our findings did not show any user/employee involvement in rehearsals beyond the involvement of incident and crises handlers. If users are trained in reporting procedures and incident detection they can actually be utilized as part of the sensor network, as opposed to what they seem to be now.
 
 \section{Recommendations}
+\label{sec:rec}
+This section presents our recommendations that are based on both challenges and successful practices  we found evident in the organizations we studied.
+
 \begin{itemize}
+\item Use well established standards or guidelines as a basis for incident management.
 \item Perform rehearsals to gain experience since experience has shown to be just as important as having established plans.
-\item Have good plans for communication, since this seems to be challenging.
-\item Utilize employees as part of the sensor network, does not seem to be done in these organizations. Better establish reporting routines!
+\begin{itemize}
+\item We recommend to perform rehearsals both for large and small incidents. remember that a small incident insufficiently could escalate and lead to a more serious incident.
+\item We recommend to perform rehearsals for regular employees as they also have an information security responsibility. Typical areas of such a rehearsal would be related to information classification, incident detection (such as malicious e-mails) and reporing procedures. 
+\end{itemize}
+\item Develop good plans for communication, since this seems to be challenging.
+\item Utilize employees as part of the sensor network, does not seem to be done in these organizations. Better establish reporting procedures! Train them in this!
 \item Conduct awareness campaigns with a reasonable regularity each being of a reasonable length (the latter also emphasized by local IT manager in case B, who said their last campaign had a very good length. They got very good feedback on this.)
 \begin{itemize}
 \item Send by e-mail, preferably in inbox when they come to work in the morning
@@ -219,11 +218,11 @@ Awareness campaigns. They are willing to learn! :)
 \item Make them understand that information security \textit{does} concern them!
 \item Make them recognize malicious targeted e-mails
 \item Provide good and many examples of how they can "lose" their sensitive information (e.g. unsecured systems they use, e-mail")
+\item Use incidents caused by employees or that could have been detected by employees in awareness-raising activities. Ahmad and the gang says that low-impact can be high learning, use them! weee
+\item If there are not resources in the organization to create an awareness campaign, it is possible to buy one, as successfully done by Organization A and B.
 \end{itemize}
 \end{itemize}
 
 \textit{It seems that loss of sensitive information/information important to the organizations' core activities is seen as the worst security incidents. This includes customer-specific information, where disclosure additionally could cause reputational damage.}
 
 \textit{The gap between implemented security measures and the sensitivity and value of information is increasing according to \cite{Morketall2012}. Is this also evident in our findings? Could be in case A}
-
-\textit{Employees should be regarded as part of the sensor network. Not done very well in the organizations, not well established in the organizations.}
