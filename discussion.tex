@@ -128,20 +128,12 @@ The organization seems to have a set of well established plans and procedures as
 This section discusses challenges and observations that we found prominent in our case study.
 
 \subsection{Communication}
-A has communication routines in their contingency plan. B has plans for communication during incidents. Supplier to has additional communication plans. B - communication identified as area of improvement in rehearsal. IT security manager - when, what to whom is one of the most challenging parts.
+During our case study we found that communication was highlighted as challenging among all of the participants. The organizations had to various extents developed and implemented plans and procedures addressing communication. Successful incident response often requires cooperation with others, thus establishing good communication procedures for incident management is essential. Communication is further emphasized as one of the most important parts of incident management by NIST. The organizations we studied in our thesis are large organizations and there are therefore not surprisingly several parties involved in their incident management. Even for Organization A that does not have to coordinate with external parties during incident handling, incident handlers have to communicate and coordinate with several internal departments. As an example from our study we highlight that the designated contact person in Organization A changes daily for some sections which imposed uncertainty for the IT security manager. 
 
-A presentation given at the ``Sikkerhet \& S\aa rbarhet 2013" conference presented results from an audit performed by The Norwegian Data Protection Authority that highlighted a problem we also found evident in our case study. E-mail is still used for unstructured and informal communication, even though it is not a secure channel. Using insecure communication channels exposes the organization to targeted phishing attacks, e.g. as seen in a recent attack against the large Norwegian telecom corporation Telenor\footnote{More information about this attack can be found in \cite{phisingattack}}. The organizations in our case study, used e-mail for communication both as a first notification of incidents and during major incidents. 
+Communication becomes even more challenging with distributed infrastructures and establishing good communication procedures is vital. Our impression gained through the interviews, survey and document studies is that it is important to have updated contact lists available, but that being able to determine the correct person to contact during incident response is just as important. To be able to determine this, situations have to be assessed and tacit knowledge about the organization and its employees might be used. This type of knowledge is difficult to document and thus difficult to include in plans. We therefore believe that in order to mitigate communication related challenges, employees involved in incident handling must have experience, which can be gained through rehearsals. 
 
-\textit{Two of the most important parts of incident management are the existence of guidelines for communication and prioritization of incidents as well as the use of a lessons learned process to gain experience from previous incidents. \cite{nist800-61}}
+A presentation given at the ``Sikkerhet \& S\aa rbarhet 2013" conference presented results from an audit performed by The Norwegian Data Protection Authority that highlighted a problem we also found evident in our case study. E-mail is still used for unstructured and informal communication, even though it is not a secure channel. Using insecure communication channels exposes the organization to targeted phishing attacks, e.g. as seen in a recent attack against the large Norwegian telecom corporation Telenor\footnote{More information about this attack can be found in \cite{phisingattack}}. The organizations in our case study, used e-mail for communication both as a first notification of incidents and during major incidents. To mitigate the risk of phishing attacks, we recommend using secure communication channels where this is practically feasible. 
 
-\begin{itemize}
-\item \textit{Communication}
-\begin{itemize}
-\item \textit{\textbf{Who} should be contacted \textbf{when}?}
-\item \textit{Who should be contacted when the actual contact person cannot be reached?}
-\item The use of e-mail! It is insecure, but still heavily used! Also for sensitive information and reporting incidents. Supplier 1 uses e-mail to notify Organization B about incidents. This is perhaps not very smart and makes them extra vulnerable for phishing attacks. Supplier 2 uses e-mail as one of the communication methods in crisis handling. Organization A receives incident reports from users by e-mail.(ENISA even recommends using e-mail for reporting.)
-\end{itemize}
-\end{itemize}
 
 \subsection{Information}
 Collecting information with regards to incident management was pointed out as challenging by participants in our case study. Especially for organizations with distributed infrastructures, there are many sources of information which makes the collection of correct information difficult. This observation supports findings in a case study conducted by Ahmad et al.\cite{ahmad2012incident} where the information security manager stated that the sharing or rather the finding of information was one of the most challenging parts of her job. 
@@ -152,40 +144,30 @@ One employee mentioned that often they were not notified about changes made in t
 
 We believe development and establishment of clear information dissemination procedures, that can for instance be based on incident categories, could improve the information dissemination in organizations. If procedures for each predefined incident category exist and are established, it will be easy and efficient to determine which information to share and with whom.
 
-\subsection{Responsibilities}
-\textit{Also closely linked with communication. Better routines for communication may make responsibilities clearer?}
-
-\begin{itemize}
-\item \textit{Responsibilities}
-\begin{itemize}
-\item \textit{Who is responsible for the incident?}
-\item \textit{Who is responsible for \textbf{fixing} it?}
-\item \textit{Who is responsible for covering the costs?}
-\end{itemize}
-\end{itemize}
-
-\textit{These challenges (especially communication and responsibility) are extra evident in Case B, where there are several suppliers and many people that need to cooperate, but it is also seen in Case A, where there is only one organization that handles its own IT operations involved.}
-
-Another aspect is that users may not be aware that part of the responsibility lies with them. For example users that are owners of information may have a certain responsibility for protecting this information. An example is in case A, where users are responsible for classifying the information they process, but the interviewee thought that many are not aware of this (even though it is stated in the information security policy).
-
 \subsection{Experience}
+\label{sec:experience}
+To be able to customize response to specific incidents, experience is essential. This was highlighted by several of the participants in our study. Developing detailed plans for all possible scenarios is not feasible and probably not useful either. Having well established plans and procedures for incident handling is obviously important. Nevertheless, allocating resources to the development of detailed plans for all potential incidents is unproductive as this is not possible. There could always occur incidents that no one thought of beforehand. 
 
-Even though predefined plans exist to handle a specific incident, following the plan might not always be the best solution. If the person dealing with an incidents has long experience, he might take actions that are not according to the plan, but that is the best way to solve the incident. The incident handler's experience is just as important to effective and efficient incident management/response as having plans and procedures. Link this to RQ3.
+Experience is key for making rapid and correct decisions in a complex and dynamic environment. One obvious way to gain experience is by handling real incidents. However, one should not wait for these to happen, and thus rehearsals is a necessity. By conduction rehearsals involving various types of incidents, plans and procedures can be tested and the incident handlers will gain experience at the same time. 
 
-``By conducting a causal analysis, new knowledge is created which through generalization can be used to facilitate organizational learning."\cite{werlinger2010preparation}.
+We think that neither experience nor rehearsals are sufficiently highlighted in the standards and guidelines considering their importance for incident management. The organizations in our study focus on these two factors in their incident management, but we believe they could benefit from conducting rehearsals more often.
 
-\begin{itemize}
-\item \textit{Situational Awareness}
-\begin{itemize}
-\item\textit{ Necessary to make fast and correct decisions in a complex and dynamic environment. It is challenging to know exactly where the incident ``hit" if one does not have situational awareness, thus knowing what to do and who's responsible. This was  seen as a challenge in case B as well as the main background for starting the major ``lessons learned" project in case C.}
-\end{itemize}
-\item \textit{Experience can be gained by performing real incident management or from conducting rehearsals:}
-\begin{itemize}
-\item \textit{The organizations perform rehearsals, but not very often and mainly to test contingency plans, not less serious incidents? Note: if these smaller incidents are not handled properly they may escalate and become VERY serious ;)}
-\end{itemize}
-\end{itemize}
+Our impression is that having competent and experienced incident handlers that are both familiar with existing procedures and are capable of handling unexpected scenarios is essential to a successful incident management.
 
-\textit{Another finding is that even though procedures are important, experience may be just as important, as it is impossible to plan detailed for anything, and often one must make decisions on the spot.}
+%Sitational awareness?
+
+\subsection{Responsibilities}
+It can be challenging to know exactly where an incident originated, thus knowing what to do and who is responsible for handling it is difficult. The interviewee from Supplier 2 in case B said that the greatest challenge with incident handling is cases where no one understands that they ``own" the incident and thus no one takes responsibility for it. This ambiguity of who owns an incident can be due to the uncertainty of where it originated. This challenge was also mentioned by the supply chain manager in case B who stated that minor incidents can escalate and have serious consequences if no one takes responsibility. Further, ambiguous responsibilities in combination with costs of handling an incident might lead to a delay in the incident response if no one claims ownership and takes responsibility. 
+
+Even though developing detailed plans for all possible scenario is not feasible, we still believe that having an appropriate detail level in plans addressing responsibilities could be beneficial. As it is in some situations difficult to determine who "owns" an incident, our best recommendation is improving communication to better be able to determine ownership and responsibilities in situations where this cannot be done prior to the incident.
+
+As emphasized in section \ref{sec:experience}, rehearsals are beneficial. We believe that rehearsals can contribute to reveal grey areas with regards to responsibilities. Additionally, rehearsals can make incident handlers more suited to determining where incidents originated. As organization's incident management procedures matures, they become better equipped to determine responsibilities. The supply chain manager in Organization B emphasized that after years of working closely together, their experience and tacit knowledge help them determine who is responsible for handling an incident without this being written in a plan. 
+
+The challenge of determining responsibilities is extra evident in case B, as several suppliers are involved in their incident management. In this specific case, the two suppliers have separate main responsibilities. However, we assume that grey areas may emerge with regards to responsibilities even for this case if new or unexpected incidents occur. NorSIS's guideline emphasizes that responsibilities should be determined in an SLA when (parts of) incident management is outsourced. The standards and guidelines presented in section \ref{section:standardsandguidelines} do not provide specific recommendations for resolving ambiguities with regards to incident ownership and thus responsibilities for specific incidents. We recommend organizations to spend some time on developing unambiguous \acp{SLA} with regards to responsibilities.
+
+
+
+NIST recommends to keep division of responsibilities in mind when outsourcing incident response. For instance, organizations are unwilling to give an outsourcer the authority to make operational decisions. HC nevnte dette. 
 
 \subsection{Employee Involvement}
 When we contacted people for the employee survey we observed an interesting attitude. Several employees seemed reluctant to participate due to their perception of their own lack of knowledge about information security. This was evident in comments such as:
