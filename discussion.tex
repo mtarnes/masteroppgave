@@ -125,7 +125,7 @@ The organization seems to have a set of well established plans and procedures as
 
 \section{Prominent Challenges and Observations}
 \label{sec:discussionStructures}
-This section discusses challenges and observations that we found prominent in our case study. It is important to note that these findings cannot be directly generalized. However, we find it reasonable to believe that some of these challenges and observations will be evident in other organizations as well, as the participating organizations are large and we assume that they are experienced.
+This section discusses challenges and observations that we found prominent in our case study. There are several factors involved in determining how successfully organizations respond to information security incidents. In chapter \ref{chp:introduction} we stated that we wanted to assess how these factors contribute to the efficiency and effectiveness of organizations' incident management. The challenges discussed in this section are some of the factors that are part of determining organizations' incident management. It is important to note that these findings cannot be directly generalized. However, we find it reasonable to believe that some of these challenges and observations will be evident in other organizations as well, as the participating organizations are large and we assume that they are experienced.  
 
 \subsection{Communication}
 During our case study we found that communication was regarded as challenging among all of the participants. The organizations had to various extents developed and implemented plans and procedures addressing communication. Successful incident response requires cooperation, thus establishing sound communication procedures for incident management is essential. Communication is further emphasized as one of the most important parts of incident management by NIST. The organizations we studied are large organizations and it is therefore not surprising that several parties are involved in their incident management. Even for Organization A, that does not have to coordinate with external parties during incident handling, incident handlers have to communicate and coordinate across several internal departments and sections. As an example from our study we highlight that the designated contact person in Organization A changes daily for some sections which imposed uncertainty for the IT security manager. 
@@ -181,26 +181,52 @@ Employees in our survey seem to have an overall positive attitude towards awaren
 
 \section{Recommendations}
 \label{sec:rec}
-This section presents our recommendations based on both challenges and successful practices we found evident in the organizations studied.
+This section presents our recommendations based on both challenges and successful practices found evident in the organizations studied. We believe these recommendations can be useful for various types of organizations.
 
-\begin{itemize}
+\begin{enumerate}
 \item Use well established standards or guidelines as a basis for incident management, as these are based on years of experience. 
 \item Perform rehearsals to gain experience, as experience has shown to be just as important as having established plans.
-\begin{itemize}
+\begin{enumerate}[a)]
 \item Perform rehearsals both for large and small incidents. Remember that a small incident that is not sufficiently handled could escalate and lead to a more serious incident. Additionally, small incidents can also be valuable for learning.
 \item Focus on challenging areas such as information dissemination, communication and division of responsibilities in rehearsals.
 \item Perform rehearsals for regular employees, in addition to incident handlers, as they also have an information security responsibility. Typical topics in such a rehearsal would be related to information classification, incident detection (such as malicious e-mails) and reporting procedures. 
-\end{itemize}
+\end{enumerate}
 \item Develop clear and sound plans for communication.
+\item Focus on establishing a security-positive organizational culture, where employees do not hesitate to report security events.
 \item Utilize employees as part of the sensor network. Make sure that developed reporting routines are actually \textit{established}.
 \item Conduct awareness campaigns with a reasonable regularity, each being of a reasonable length. %(the latter also emphasized by local IT manager in case B, who said their last campaign had a very good length. They got very good feedback on this.)
-\begin{itemize}
+\begin{enumerate}[a)]
 \item Send awareness campaigns by e-mail to make them easily accessible. A tip is to send them such that they are in the employees' inboxes when they arrive at work in the morning. We believe that people are extra susceptible to campaigns at that time, as other activities will not be disturbed.
-\item Focus on improving employees' assessment of the value and sensitivity of information they process such that appropriate security measures can be implemented. 
 \item Focus on making sure that employees are aware that information security \textit{does} concern them, such that they get familiar with their responsibilities.
 \item Make employees aware of security limitations in the systems they use, such that sensitive information is not unnecessary exposed. Provide examples of how information can be lost or compromised.
+\item Focus on improving employees' assessment of the value and sensitivity of information they process such that appropriate security measures can be implemented. 
 \item Focus on making sure employees are attentive to malicious targeted e-mails as well as teaching them to recognize such e-mails.
 \item Use incidents caused by employees or incidents that were/could have been detected by employees in awareness-raising activities. Incidents experienced by others, can also be used as examples. Further, we especially recommend using incidents discussed in the media as many employees will be familiar with these. 
 \item If the organization does not have the resources to create awareness campaigns themselves, it is possible to buy these from external providers, as successfully done by Organization A and B.
-\end{itemize}
-\end{itemize}
+\end{enumerate}
+\end{enumerate}
+
+Table \ref{tab:challengesAndMeasures} shows the relationship between the challenges we observed and our recommended measures for mitigating these challenges. Our first recommendation involves using well established standards for incident management. As can be seen in the table, we have only listed recommendation 1 as a secondary measure to one of the observed challenges. This might indicate that the standards and guidelines do not focus sufficiently on these challenging factors. We believe there might be a connection between the challenges in organizations' incident management and that the standards and guidelines do not focus on these areas. Hence, basing incident management on standards alone are not satisfactory.
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{| l | l | l |}
+\hline
+  \textbf{Challenges} & \textbf{Main measures} & \textbf{Secondary measures} \\
+  \hline
+  Communication & 2b, 3 & 1 \\
+  \hline
+  Information & 2b & 5 \\
+  \hline
+  Experience & 2 & 4, 5, 6 \\
+  \hline
+  Responsibility & 2, 6b & 6c, 6d \\
+  \hline
+  Employee Involvement & 2c, 4, 5, 6 &  \\
+\hline
+\end{tabular}
+\label{tab:challengesAndMeasures}
+\caption{Links Between Observed Challenges and Proposed Measures}
+\end{center}
+\end{table}
+
