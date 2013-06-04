@@ -1,9 +1,7 @@
-This section describes the results from interviews and document study for Case C.
+This section describes the results from interviews and document study for case C. The interviewee is the IT security manager. 
 
 \subsection{Preparation}
-The organization has several internal departments. They use different incident handling plans depending on the type of security incidents they are dealing with since various expertise areas are required to respond effectively. 
-
-The organization has implemented several measures to prepare for security incidents. They have developed three frameworks for incident management where each framework addresses a specific category of incidents. These frameworks describe relevant roles and activities for handling the organization's three main categories of incidents:
+Organization C has implemented several measures to prepare for security incidents. Various expertise areas are required to respond effectively to different types of incidents and thus Organization C uses several incident handling plans. They have developed three frameworks for incident management where each framework addresses a specific category of incidents. These frameworks describe relevant roles and activities for handling Organization C's three main categories of incidents:
 
 \begin{itemize}
 \item IT operational-related incidents (service interruption etc.)
@@ -11,57 +9,57 @@ The organization has implemented several measures to prepare for security incide
 \item All other incidents (terror, accidents etc.)
 \end{itemize}
  
-Even though the IT security manager describes an incident as being loss of information, other events such as DDOS attacks are also defined as incidents even though it is the availability of information that is compromised rather than confidentiality or integrity. In most cases he thinks of security incidents whenever there is an attacker trying to steal information. Nevertheless, he highlights:
+The IT security manager describes an incident as being loss of information. However, other events such as DDOS attacks are also defined as incidents even though it is the availability of information that is compromised rather than confidentiality or integrity. In most cases he thinks of security incidents whenever there is an attacker trying to steal information. He highlighted:
 
 \begin{quote}
 \textit{``90-95\% of the security incidents we experience are availability related incidents"}
 \end{quote} 
  
-It is essential for the organization that customers trust them and their services. The IT security manager identified loss of sensitive customer information, service unavailability and other incidents that could possibly lead to a weakening of the trust relationship as the most serious consequences of information security incidents. 
+It is essential for Organization C that customers trust them and their services. The IT security manager identified loss of sensitive customer information, service unavailability and other incidents that could possibly lead to a weakening of the trust relationship with customers as the most serious consequences of information security incidents. 
 
-The organization's security policy aims to communicate the management's direction and commitment to information security. One of the main objectives stated in their security policy is that information security should be part of their risk management and long-term strategy. Information security should be revised, improved and sufficient resources should be allocated. The policy states that it is the management that has the ultimate information security responsibility, but that their success relies on the collective effort of everyone involved, especially all their competent and dedicated employees. Information security is stated to be a critical business issue, and thus the organization strives to create a security-positive environment.
+Organization C's security policy aims to communicate the management's direction and commitment to information security. One of the main objectives stated in their security policy is that information security should be part of their risk management and long-term strategy. Information security should be revised, improved and sufficient resources should be allocated. The policy states that it is the management that has the ultimate information security responsibility, but that their success relies on the collective effort of everyone involved. Information security is stated to be a critical business issue, and thus Organization C strives to create a security-positive environment.
 
 In addition to the top level security policy, there are different policies for each individual department as their need for security varies. Additionally, contingency plans are implemented and revised continuously. The organization has a predefined plan for communication with the media during major incidents. 
 
 \paragraph{Awareness and Training}
-The IT security manager mentioned that they perform extensive work to raise awareness related to security among employees. New employees participate in courses where they are introduced to the organization's security handbook and they have to sign that the content is known and understood. The security handbook is also revisited annually during employee appraisals where employees have to reconfirm that the content is known. In addition, employees are invited to lunches and security-related presentations regularly. The intention is to increase the overall competence and to ensure that security guidelines are read and not forgotten.
+The IT security manager stated that they perform extensive work to raise awareness related to security among employees. New employees participate in courses where they are introduced to the organization's security handbook and they have to sign that the content is known and understood. The security handbook is also revisited annually during employee appraisals where employees have to reconfirm that the content is known. In addition, employees are invited to lunch colloquiums and security-related presentations regularly. The intention is to increase the overall competence and to ensure that security guidelines are known.
 
-The organization does not conduct training for employees addressing the most common incidents. The IT security manager emphasized that their plans and procedures are being used so often in practice that there is no need to arrange training for these cases. However, in accordance with the ITIL framework the organization conducts rehearsals once a year with a scenario they believe is useful. The organization performs rehearsals in cooperation with customers regularly, as the customers often wish to include their IT service providers. Additionally, training in cooperation with the government takes place every other year. 
+Organization C does not conduct any training for employees addressing the most common incidents. The IT security manager emphasized that their plans and procedures are being used so often in practice that there is no need to arrange training for these cases. However, Organization C conducts rehearsals once a year with a scenario they believe is useful. They perform rehearsals in cooperation with customers regularly, as the customers often wish to include their IT service providers. Additionally, training in cooperation with the government takes place every other year. 
 
 \subsection{Detection and Analysis}
 There are several ways that incidents can be detected.
 \paragraph{Initial Detection}
-The initial detection of incidents can either be performed automatically by a server, triggered by an alarm or discovered manually. Often, network analysis have to be done manually to detect security breaches. One of the organization's requirements for incident management states that all incidents must be registered in their systems. Whenever employees experience something abnormal or unexpected they are advised to report it to the \ac{IRT}. Examples include e-mails from unknown senders or e-mail attachments that do not work as intended. The attachments may fail to open or display something indicating that a script is being run for a few seconds.
+The initial detection of incidents can either be performed automatically by a server, triggered by an alarm or discovered manually. Often, network analysis have to be done manually to detect security breaches. One of Organization C's requirements for incident management states that all incidents must be registered in their systems. Whenever employees experience something abnormal or unexpected they are advised to report it to the \ac{IRT}. Examples include e-mails from unknown senders or e-mail attachments that do not work as intended.
 
-The IT security manager suspects underreporting of incidents among employees. He believes the threshold for reporting is high and that employees often omit to report suspicious events. This could either be due to employees failing to see the importance of reporting incidents or that they do not want to acknowledge potential mistakes they made. The IT security manager says they would rather have too many events being reported than too few, and they therefore work continually to emphasize the importance of reporting incidents.
+The IT security manager suspects underreporting of incidents among employees. He believes the threshold for reporting is high and that employees often omit to report suspicious events. This could either be due to employees failing to see the importance of reporting incidents or that they do not want to acknowledge potential mistakes they made. The IT security manager said they would rather have too many events being reported than too few, and they therefore work continually to emphasize the importance of reporting incidents.
 
-Security vulnerabilities are reported through a risk framework, where they are evaluated, categorized and potentially escalated. The organization does not operate with anonymization for employees that report security events, but codes of conduct says one could use an external law firm if someone wishes to report incidents anonymously. However, this opportunity has not been used by employees so far. 
+Security vulnerabilities are reported through a risk framework, where they are evaluated, categorized and potentially escalated. Organization C does not operate with anonymization for employees that report security events, but codes of conduct says one could use an external law firm if someone wishes to report incidents anonymously. However, this opportunity has never been used by employees. 
 
 \paragraph{Categorization}
-The organization does not follow any standards for categorization. They categorize incidents as being of low, medium or high impact. Whenever incidents are handled they are linked to these levels and handled according to predefined procedures. An incident's impact level will determine what can be done in response. For high impact incidents, authorization is needed from customers in case systems need to be shut down or changes have to be made in the production environment. This represent complex incident responses and are referred to as emergency changes, but are in some cases necessary to mitigate serious consequences. The organization bases their categorization method on the ITIL framework.
+Organization C bases their incident categorization on the ITIL framework. They categorize incidents as being of low, medium or high impact. Whenever incidents are handled they are linked to these levels and handled according to predefined procedures. An incident's impact level will determine what can be done in response. For high impact incidents, authorization is needed from customers in case systems need to be shut down or changes have to be made in the production environment. This represent complex incident responses and are referred to as emergency changes, but are in some cases necessary to mitigate serious consequences. 
 
 \subsection{Incident Response}
-The main purposes of incident response are to retain normal business operations, minimize business impact by ensuring service availability and to find a temporary solution to the causing problem. The IT security manager explains why keeping services up and running at all times are so important:
+The main purposes of incident response in Organization C are to retain normal business operations, minimize business impact by ensuring service availability and to find a temporary solution to the problem. The IT security manager stated why keeping services up and running at all times are so important:
 
 \begin{quote}
 \textit{``Customers evaluate us mainly based on the availability of the services we deliver."}
 \end{quote}
-Thus, restoring service availability is a number one priority in the organization's incident response.
+Hence, restoring service availability is a number one priority in the organization's incident response.
 
 \paragraph{\acl{IRT}}
-In addition to dedicated incident managers, the organization has its own \ac{IRT} to assist in major incidents. The \ac{IRT} also handles incoming notifications from internal users regarding security issues and may also deal with incidents concerning customers. Employees work day and night with ``normal business operations" and thus need security expertise available 24/7 in case of incidents. The \ac{IRT} works as a point of contact for the entire organization. They primarily assist in incident response and otherwise work as a pool of resources for incident managers. 
+In addition to dedicated incident managers, Organization C has its own \ac{IRT} to assist in major incidents. The \ac{IRT} handles incoming notifications from internal users regarding security issues and may deal with incidents concerning customers. Employees work continuously with ``normal business operations" and thus need security expertise available 24/7 in case of incidents. The \ac{IRT} works as a point of contact for the entire organization. They primarily assist in incident response and otherwise work as a pool of resources for incident managers. 
 
-It is the incident managers that \emph{handle} incidents, whereas the \ac{IRT} assists with their expertise on security incidents. Additionally, the \ac{IRT} are granted certain mandates that allow them to shut down systems or acquire external expertise and assistance up to a predefined cost limit.    
+It is the incident managers that handle incidents, whereas the \ac{IRT} assists with their expertise on security incidents. Additionally, the \ac{IRT} is granted certain mandates that allow them to shut down systems or acquire external expertise and assistance up to a predefined cost limit.    
 
-The organization has their own \ac{IRT} handbook. The handbook aims to describe how the \ac{IRT} operates and is used to explain internal routines to new team members. The \ac{IRT} handles most of the organization's security incidents as well as some customers'. However, most customers have their own \ac{IRT}, although the organization offers their \ac{IRT} as a service for customers that do not have the capacity or need of their own team.
+Organization C has their own \ac{IRT} handbook. The handbook aims to describe how the \ac{IRT} should operates and is used to explain internal routines to new team members. The \ac{IRT} handles most of Organization C's security incidents as well as some customers'. Most customers have their own \ac{IRT}, although Organization C offers their \ac{IRT} as a service for customers that do not have the capacity for establishing or need of their own team.
 
-The \ac{IRT} communicate and coordinate with involved parties throughout the incident response. For critical incidents, a second team called the \ac{CIM} team works as an internal support function for the \ac{IRT} and provides complementary competence. The two teams work together to resolve critical incidents. One of the requirements for the organization's incident management process is that all actions taken by the teams that add value to the incident handling process should be recorded such that others can continue the work if necessary.
+The \ac{IRT} communicates and coordinates with involved parties throughout the incident response. For critical incidents, a second team called the \ac{CIM} team works as an internal support function for the \ac{IRT} and provides complementary competence. The two teams work together to resolve critical incidents. One of the requirements for Organization C's incident management process is that all actions taken by the teams that add value to the incident handling process should be recorded such that others can continue the work if necessary.
 
 \paragraph{Standards and Guidelines}
-The organization bases all of their service management processes on the ITIL framework discussed in section \ref{section:ITIL}. They follow the ISO/IEC 27001 standard, and have several certifications. Their incident management processes however, are mainly built on the ITIL framework. The IT security manager is not familiar with the ISO 27035 standard that addresses security incident management specifically. 
+Organization C bases all of their service management processes on the ITIL framework presented in section \ref{section:ITIL}. They have implemented the ISO/IEC 27001 standard, and have several certifications. Their incident management processes, however, are mainly built on the ITIL framework. The IT security manager is not familiar with the ISO 27035 standard that addresses security incident management specifically. 
 
 \paragraph{Workflow for incidents}
-The workflow for incident management is based on the processes described in the ITIL framework. Figure \ref{fig:workflowcaseC} illustrates the workflow, which is derived from organization specific documentation as well as information given in the interview. 
+The workflow for incident management is based on the processes described in the ITIL framework. Figure \ref{fig:workflowcaseC} illustrates the workflow, and is derived from organization specific documentation as well as information given in the interview. 
 
 \begin{figure}[H]
 \hspace{-1.1cm}\includegraphics[scale=0.49]{workflowcaseC.png}
@@ -73,18 +71,16 @@ The workflow for incident management is based on the processes described in the 
 \item An incident is first detected or reported to the service desk.
 \item Each incident is categorized and prioritized such that it can be handled correctly. Further, the service desk decides whether the reported event is truly an incident. In case of false alarms, the reported events are either rejected or handled as service requests.
 \item The incident is diagnosed and possible negative effects are considered.
-\item The service desk assesses whether the incident has a known solution and their capability to handle it.
+\item The service desk assesses whether the incident has a known solution and whether they are capability of handling it.
 \item Incidents with unknown solutions are sent to a group of specialists that conduct further investigations.
-\item Escalating and severe incidents are passed on to the ``Major incident handling" process when appropriate. 
+\item Escalated and severe incidents are passed on to the ``Major incident handling" process when appropriate. 
 \item Once a solution is found, whether by the service desk or group of specialists, incidents are resolved.
 \item The incident is fully documented with all relevant information.
 \item The incident is closed and users confirm that the incident is fully resolved. 
 \end{itemize}
 
 \paragraph{Workflow for major incidents}
-Major incidents are defined by ITIL as incidents of the highest and second highest priority. The organization has separate procedures for major incidents. Incidents in this category usually have a high degree of user impact and thus have higher urgency and shorter time intervals for response activities. These procedures are initiated in the ``Major incident handling process" whenever incidents are assessed as major. This is illustrated in figure \ref{fig:workflowcaseC}.  
-
-Figure \ref{fig:workflowcaseCmajor} illustrates the workflow for major incidents. The content is based on organization specific documents as well as information given during the interview.
+Major incidents are defined by ITIL as incidents of the highest and second highest priority. Organization C has separate procedures for major incidents. Incidents in this category usually have a high degree of user impact and thus have higher urgency and stricter time constrains for response activities. These procedures are initiated in the ``Major incident handling process" whenever incidents are assessed as major. Figure \ref{fig:workflowcaseCmajor} illustrates the workflow for major incidents. The content is based on organization specific documents as well as information given during the interview.
 
 \begin{figure}[H]
 \hspace{-1.1cm}\includegraphics[scale=0.53]{WorkflowcaseCMAJOR.png}
@@ -93,9 +89,9 @@ Figure \ref{fig:workflowcaseCmajor} illustrates the workflow for major incidents
 \end{figure}
 
 \begin{itemize}
-\item When the organization handles major incidents, support in form of a Service Manager, Incident Manager or the Critical Incident Management team are engaged in the incident response.
-\item It is evaluated whether an Incident Management Board is needed to handle the incident. If it is not, the incident is handled according to normal incident management procedures.
-\item An Incident Management Board is established to ensure proper management and appropriate handling of the major incident. The \ac{IRT} may be part of the Incident Management Board whenever necessary.
+\item When the organization handles major incidents, support in form of a Service Manager, Incident Manager or the \ac{CIM} team are engaged in the incident response.
+\item It is evaluated whether an Incident Management Board is needed to handle the incident. If it is not, the incident is handled according to normal incident management procedures as illustrated in figure \ref{fig:workflowcaseC}.
+\item An Incident Management Board is established to ensure proper management and appropriate handling of the major incident. The \ac{IRT} may be part of the Incident Management Board if necessary.
 \item If dedicated resources are needed, a Task Force is established. A Task Force is an ITIL term for a dedicated group of resources that are put together to solve a specific task.
 \item When a solution is found, either by the Task Force or the Incident Management Board, the incident can be resolved.
 \item The incident is documented and activities are logged.
@@ -105,13 +101,13 @@ Figure \ref{fig:workflowcaseCmajor} illustrates the workflow for major incidents
 
 
 \paragraph{Escalation}
-The organization has no predefined routines for external escalation during incident response, even though they have done it several times in practice. Internal escalation is performed as described in the workflows.
+Organization C has no predefined routines for external escalation during incident response, even though they have done it several times in practice. Internal escalation is performed as described in the workflows.
 
 \paragraph{Electronic Evidence}
-The organization has no in-house expertise on forensic analysis of electronic evidence. Mirroring disks for use as digital evidence approved for Norwegian courts is the only thing done by the organization itself with regards to electronic evidence. The analysis of the disks are done by an external third party or by the police.
+Organization C has no in-house expertise on forensic analysis of electronic evidence. Mirroring disks for use as digital evidence approved for Norwegian courts is the only thing done by the organization itself with regard to electronic evidence. If there is need for analysis of the disks, it is performed by an external third party or by the police.
 
 \subsection{Lessons Learned}
-The organization structures their learning process in accordance with the problem management process from ITIL. Improvements are identified during this process. 
+Organization C structures their learning process in accordance with the problem management process from the ITIL framework. Improvements are identified during this process. 
 
 After rehearsals a set of improvements are identified and summarized. Often, interaction with external parties are identified as areas of improvement, especially in accordance with customers. Collaboration and coordination across organizations and teams are proven to be challenging as IT service providers and customers often handle different parts of incidents. 
 
@@ -121,34 +117,30 @@ A centralized tool is used to document incidents in addition to experiences, pot
 \textit{``Often concrete measures are identified after incidents. Both organizational, process-related and on the investment side."}
 \end{quote}
 
-As an example he mentioned major DDOS attacks leading to customers investing in new equipment and new routines for communication being implemented. 
-
-%Despite internal learning and review processes, experience and lessons learned are not often shared with external parties. How the organization perform incident management is not something they necessarily want to be public information as they wish to some extent to stay ``under the radar". Also, most often incidents occur with their customers and it is thus up to them whether information is shared. 
-
-The IT manager explained why he thinks their routines work so well:
+The IT manager explained why he thinks their routines work well:
 
 \begin{quote}
 \textit{``Since we are such a large organization we deal with a large volume of security incidents and thus our frameworks work well. I believe it is much tougher for smaller organizations. If it has been years since the last incident it becomes more challenging to respond effectively."}
 \end{quote}
 
-The organization is currently working with a project for improving their incident management and so far it has proven to be very effective. It mainly involves improving quality in their many and complex value chains. The IT security manager described why this is important in incident management:
+Organization C is currently working on a project for improving their incident management and so far it has proven to be very effective. It mainly involves improving quality in their many and complex value chains. The IT security manager described why this is important in incident management:
 
 \begin{quote}
 \textit{``One of the most important things with incident management is keeping track of and understanding value chains: which, when and how components are communicating."}
 \end{quote}
 
-Large organizations often have complex and long supply chains. Through the improvement project they identified weak quality in their value chain descriptions as a problem for effective incident response. The diagnostic work was complex, and sometimes it was challenging to identify what happened, where it happened and with what consequences. The organization has started extensive work to identify any single-point-of-failure and make value chains more robust. The project started in one of the organization's departments but quickly escalated to include larger parts of the organization as they saw positive results. The project's objective is to identify vulnerabilities and areas of improvement, whereas it is the various departments' responsibility to implement the recommended changes. So far the project has lead to improvements and new routines for interacting with third parties and it shows an overall positive trend for minor incidents within the organization. 
+Through the improvement project they identified weak quality in their value chain descriptions as a problem for effective incident response. The diagnostic work was complex, and sometimes it was challenging to identify what happened, where it happened and with what consequences. Organization C has started extensive work to identify any single-point-of-failure. The project started in one of Organization C's departments but quickly escalated to include larger parts of Organization C as they saw positive results. The project's objective is to identify vulnerabilities and areas of improvement, whereas it is the various departments' responsibility to implement the recommended changes. So far the project has lead to improvements and new routines for interacting with third parties and it shows an overall positive trend for minor incidents within the organization. 
 
 \subsection{Employee Survey}
-All participants in the survey from organization C said they were familiar with the organization's security policy. A few said the policy's content was partially known, whereas one employee mentioned to have participated in a course addressing the security policy specifically.
+All the 11 participants in the survey said they were familiar with the organization's security policy. A few said the policy's content was partially known, whereas one employee mentioned to have participated in a course addressing the security policy specifically.
 
 Only two of the participants acknowledged to have received suspicious e-mails. Neither performed instructions or opened attachments in these e-mails. They did not report to anyone having received such e-mails, but one said they discussed it internally. One employee mentioned that he had noticed suspicious e-mails in an inbox for shared e-mails. 
 
 Over all, employees seemed to have a good understanding of what an information security incident is. Only one participant did not provide any definition or examples, whereas most mentioned sensitive or internal information being leaked as typical incidents. All of the 11 participants claimed to be attentive to incidents in their everyday activities or at least that they tried to be.
 
-When asked in which situations and whom they are suppose to report incidents to, their answers varied. Three employees said they did not know, but emphasized that they knew where they could find the relevant information. Leaders and security managers were mentioned as points of contact in case of incidents. However, none of the participants had ever reported incidents. One employee stated: 
+When asked in which situations and to whom they are supposed to report incidents, their answers varied. Three employees said they did not know, but emphasized that they knew where they could find the relevant information. Leaders and security managers were mentioned as points of contact in case of incidents. However, none of the participants had ever reported incidents. One employee stated: 
 \begin{quote}
-\textit{``I have the impression that it's probably more situations that should have been reported than that actually are reported."}
+\textit{``I have the impression that it's probably more situations that should have been reported than that are actually reported."}
 \end{quote}
 
-Except from a couple of employees, everyone had conducted some kind of courses or been given information about information security. Apart from one employee stating that the information provided was too obvious, everyone found it useful. Several measures for raising awareness such as video lectures via the intranet, internal and external courses, seminars and information meetings were mentioned by the participants. The employees who found the measures useful said that it put a refocus on and reminded them of best practice for information security.
+Except from a couple of employees, everyone had conducted some kind of courses or been given information about information security. Apart from one employee stating that the information provided was too obvious, everyone found it useful. Several measures for raising awareness such as video lectures via the intranet, internal and external courses, seminars and information meetings were mentioned by the participants. The employees who found the measures useful said that it reminded them of best practice for information security.
