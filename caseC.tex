@@ -58,16 +58,18 @@ The \ac{IRT} communicates and coordinates with involved parties throughout the i
 \paragraph{Standards and Guidelines}
 Organization C bases all of their service management processes on the ITIL framework presented in section \ref{section:ITIL}. They have implemented the ISO/IEC 27001 standard, and have several certifications. Their incident management processes, however, are mainly built on the ITIL framework. The IT security manager is not familiar with the ISO 27035 standard that addresses security incident management specifically. 
 
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.515]{workflowcaseC.png}
+\caption[Workflow for Incidents, Case C]{Workflow for Incidents}
+\label{fig:workflowcaseC}
+\end{center}
+\end{figure}
+\pagebreak
 \paragraph{Workflow for incidents}
 The workflow for incident management is based on the processes described in the ITIL framework. Figure \ref{fig:workflowcaseC} illustrates the workflow, and is derived from organization specific documentation as well as information given in the interview. 
 
-\begin{figure}[H]
-\hspace{-1.1cm}\includegraphics[scale=0.49]{workflowcaseC.png}
-\caption[Workflow for Incidents, Case C]{Workflow for Incidents}
-\label{fig:workflowcaseC}
-\end{figure}
-
-\begin{itemize}
+\begin{itemize}\itemsep-0.1cm
 \item An incident is first detected or reported to the service desk.
 \item Each incident is categorized and prioritized such that it can be handled correctly. Further, the service desk decides whether the reported event is truly an incident. In case of false alarms, the reported events are either rejected or handled as service requests.
 \item The incident is diagnosed and possible negative effects are considered.
@@ -83,12 +85,14 @@ The workflow for incident management is based on the processes described in the 
 Major incidents are defined by ITIL as incidents of the highest and second highest priority. Organization C has separate procedures for major incidents. Incidents in this category usually have a high degree of user impact and thus have higher urgency and stricter time constrains for response activities. These procedures are initiated in the ``Major incident handling process" whenever incidents are assessed as major. Figure \ref{fig:workflowcaseCmajor} illustrates the workflow for major incidents. The content is based on organization specific documents as well as information given during the interview.
 
 \begin{figure}[H]
-\hspace{-1.1cm}\includegraphics[scale=0.53]{WorkflowcaseCMAJOR.png}
+\begin{center}
+\includegraphics[scale=0.58]{WorkflowcaseCMAJOR.png}
 \caption[Workflow for Major Incidents, Case C]{Workflow for Major Incidents}
 \label{fig:workflowcaseCmajor}
+\end{center}
 \end{figure}
 
-\begin{itemize}
+\begin{itemize}\itemsep-0.1cm
 \item When the organization handles major incidents, support in form of a Service Manager, Incident Manager or the \ac{CIM} team are engaged in the incident response.
 \item It is evaluated whether an Incident Management Board is needed to handle the incident. If it is not, the incident is handled according to normal incident management procedures as illustrated in figure \ref{fig:workflowcaseC}.
 \item An Incident Management Board is established to ensure proper management and appropriate handling of the major incident. The \ac{IRT} may be part of the Incident Management Board if necessary.
@@ -98,7 +102,6 @@ Major incidents are defined by ITIL as incidents of the highest and second highe
 \item The incident is closed and users have to confirm that it is fully resolved.
 \item The incident is handed over to the Problem Management Process for further analysis.  
 \end{itemize}
-
 
 \paragraph{Escalation}
 Organization C has no predefined routines for external escalation during incident response, even though they have done it several times in practice. Internal escalation is performed as described in the workflows.
